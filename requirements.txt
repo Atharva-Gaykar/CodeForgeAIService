@@ -1,0 +1,9 @@
+langchain==1.2.10
+pydantic==2.11.7
+langchain_huggingface
+langchain-groq==1.1.1
+pinecone==8.0.0
+langchain_community==0.4.1
+fastapi==0.118.1
+uvicorn
+pinecone-text
