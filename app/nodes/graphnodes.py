@@ -1,4 +1,3 @@
-
 from app.state.state import OnboardingState
 from langchain_core.messages import SystemMessage, HumanMessage,ToolMessage,AIMessage
 from app.prompts.resume_agent_prompt import resume_agent_prompt
@@ -8,9 +7,9 @@ from app.agents.agents import resume_agent,jd_agent,roadmap_planner_agent,gap_an
 from app.prompts.gap_analysis_agent_prompt import gap_analysis_agent_prompt
 from app.schemas.pydanticschema import ResumeExtract,JobDescriptionExtract,SkillGapAnalysis
 import json
-
-
+from app.tools.tools import *
 from langchain_community.document_loaders import PyMuPDFLoader
+from langgraph.prebuilt import ToolNode ,tools_condition
 
 def input_node(state: OnboardingState):
 
@@ -195,3 +194,7 @@ def finalize_state_node(state: OnboardingState):
         "final_roadmap": final_roadmap,
         "mermaid_code": mermaid_code
     }
+
+
+
+tool_node = ToolNode(roadmap_planner_agent_tools)
