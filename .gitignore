@@ -5,6 +5,8 @@ google-credentials.json
 !composer.json  # If you use composer (optional)
 /venv
 
+
+/Notebooks
 # --- Python Environment ---
 __pycache__/
 *.py[cod]

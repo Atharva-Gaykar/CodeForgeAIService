@@ -1,14 +1,14 @@
 import json
 import pickle
-import torch
+import requests
 from pathlib import Path
 from typing import List
 
 from pinecone import Pinecone, ServerlessSpec
 from pinecone_text.sparse import BM25Encoder
-from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.retrievers import PineconeHybridSearchRetriever
 from langchain_core.documents import Document
+from langchain_core.embeddings import Embeddings
 
 from app.core.config import settings
 
@@ -23,25 +23,38 @@ BM25_PKL_PATH = BASE_DIR / "bm25.pkl"
 
 
 # -----------------------------
-# Device
+# General Remote Embeddings
+# aviods cold starts
 # -----------------------------
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(f"Using device: {device}")
+class GeneralRemoteEmbeddings(Embeddings):
+    def __init__(self, endpoint: str):
+        self.endpoint = endpoint
+
+    def embed_documents(self, texts: List[str]) -> List[List[float]]:
+        response = requests.post(
+            f"{self.endpoint}/embed_docs",
+            json={"texts": texts}
+        )
+        response.raise_for_status()
+        return response.json()["embeddings"]
+
+    def embed_query(self, text: str) -> List[float]:
+        response = requests.post(
+            f"{self.endpoint}/embed_query",
+            json={"text": text}
+        )
+        response.raise_for_status()
+        return response.json()["embedding"]
 
 
-# -----------------------------
-# Embeddings
-# -----------------------------
-
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2",
-    model_kwargs={"device": str(device)}
+embeddings = GeneralRemoteEmbeddings(
+    endpoint="https://gaykar-generalembeddings.hf.space"
 )
 
 
 # -----------------------------
-# Load Documents from JSON
+# Load Documents
 # -----------------------------
 
 def load_documents(data_path: Path) -> List[Document]:

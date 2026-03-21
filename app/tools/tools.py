@@ -4,6 +4,8 @@ from app.utils.vectordatabase import retriever
 from app.schemas.pydanticschema import LearningRoadmap
 import json
 from typing import Dict, List,Any
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent
 
 @tool
 def search_courses(query: str, level: str, category: str):
@@ -111,8 +113,16 @@ class CourseLookup:
         """Retrieves full details of a course by its ID."""
         return self.courses_map.get(course_id)
 
+DATA_PATH = BASE_DIR / "Catalog.json"
 
-lookup_service = CourseLookup("Catalog.json")
+if DATA_PATH.exists():
+    lookup_service = CourseLookup(DATA_PATH)
+
+else:
+    raise FileNotFoundError(f"Catalog file not found: {DATA_PATH}")
+
+     
+
 
 @tool
 def get_course_by_id(course_id: str) -> str:
