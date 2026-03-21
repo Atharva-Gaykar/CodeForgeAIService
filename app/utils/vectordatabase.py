@@ -1,34 +1,85 @@
+import json
+import pickle
+import torch
+from pathlib import Path
+from typing import List
+
 from pinecone import Pinecone, ServerlessSpec
 from pinecone_text.sparse import BM25Encoder
-import os
-from dotenv import load_dotenv
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.retrievers import PineconeHybridSearchRetriever
-import torch
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.schema import Document
+from langchain_core.documents import Document
+
+from app.core.config import settings
 
 
+# -----------------------------
+# Paths
+# -----------------------------
 
-device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
-embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2", model_kwargs={"device": device})
-
-
-load_dotenv()
-
-
-
+BASE_DIR = Path(__file__).resolve().parent
+DATA_PATH = BASE_DIR / "formatted_catalog.json"
+BM25_PKL_PATH = BASE_DIR / "bm25.pkl"
 
 
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-pc = Pinecone(api_key=PINECONE_API_KEY)
+# -----------------------------
+# Device
+# -----------------------------
 
-index_name = "catalog-embeddings"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using device: {device}")
 
 
-# Create index if not exists
-if index_name not in pc.list_indexes().names():
+# -----------------------------
+# Embeddings
+# -----------------------------
+
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs={"device": str(device)}
+)
+
+
+# -----------------------------
+# Load Documents from JSON
+# -----------------------------
+
+def load_documents(data_path: Path) -> List[Document]:
+    if not data_path.exists():
+        raise FileNotFoundError(f"Catalog file not found: {data_path}")
+
+    with open(data_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    documents = [
+        Document(
+            page_content=doc["page_content"],
+            metadata=doc["metadata"]
+        )
+        for doc in data
+    ]
+
+    print(f"Loaded {len(documents)} course documents")
+    return documents
+
+
+documents: List[Document] = load_documents(DATA_PATH)
+
+if not documents:
+    raise ValueError("No documents loaded from formatted_catalog.json")
+
+
+# -----------------------------
+# Pinecone Index
+# -----------------------------
+
+pc = Pinecone(api_key=settings.PINECONE_API_KEY)
+
+INDEX_NAME = "catalog-embeddings"
+
+if INDEX_NAME not in pc.list_indexes().names():
     pc.create_index(
-        name=index_name,
+        name=INDEX_NAME,
         dimension=384,
         metric="dotproduct",
         spec=ServerlessSpec(
@@ -36,17 +87,39 @@ if index_name not in pc.list_indexes().names():
             region="us-east-1"
         )
     )
-    print("Index created.")
+    print(f"Index created: {INDEX_NAME}")
 
-index = pc.Index(index_name)
+index = pc.Index(INDEX_NAME)
 print("Index ready:", index.describe_index_stats())
+
+
+# -----------------------------
+# BM25 Sparse Encoder
+# Loads from pickle if exists, fits and saves if not
+# -----------------------------
 
 bm25_encoder = BM25Encoder()
 
-bm25_encoder.fit([doc.page_content for doc in documents])
+if BM25_PKL_PATH.exists():
+    print("Loading existing BM25 model from pickle...")
+    with open(BM25_PKL_PATH, "rb") as f:
+        bm25_encoder = pickle.load(f)
+else:
+    print("Fitting BM25 on course catalog...")
+    bm25_encoder.fit([doc.page_content for doc in documents])
+    with open(BM25_PKL_PATH, "wb") as f:
+        pickle.dump(bm25_encoder, f)
+    print(f"BM25 fitted and saved to {BM25_PKL_PATH}")
+
+
+# -----------------------------
+# Hybrid Retriever
+# -----------------------------
 
 retriever = PineconeHybridSearchRetriever(
     embeddings=embeddings,
     sparse_encoder=bm25_encoder,
     index=index
 )
+
+print("Retriever ready.")
