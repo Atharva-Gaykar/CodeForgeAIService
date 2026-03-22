@@ -8,3 +8,5 @@ fastapi==0.118.1
 uvicorn
 pinecone-text
 sentence-transformers
+python-multipart
+pymupdf
