@@ -97,33 +97,15 @@ def skill_gap_node(state: OnboardingState):
     
     # To remove noise and reduce size  of the prompt.
     lean_resume_dict = resume_data.model_dump(
-        exclude={
-            "achievements": True, # Drops the entire achievements list
-            "skills": {"__all__": {"category"}}, # Drops 'category' from every skill
-            "experience": {"__all__": {"responsibilities"}}, # Drops bullet points
-            "projects": {"__all__": {"what_was_built"}}, # Drops project descriptions
-            "certifications": {"__all__": {"issuer"}} # Drops the issuer
-        },
-        exclude_none=True # Bonus: Automatically drops any fields that are None/null!
+       exclude_none=True # Bonus: Automatically drops any fields that are None/null!
     )
 
     raw_jd = state["JobDescriptionExtract_data"]
     
     # Strip the HR noise and text bloat
     lean_jd_dict = raw_jd.model_dump(
-        exclude={
-            "company_name": True,
-            "location": True,
-            "employment_type": True,
-            "duration_months": True,
-            "responsibilities": True, # Dropping verbose bullet points
-            "requirements": True,
-            "constraints": True
-        },
-        exclude_none=True # Drops any null fields
+       exclude_none=True # Drops any null fields
     )
-    
-
     
     lean_resume_json = json.dumps(lean_resume_dict, indent=2)
 

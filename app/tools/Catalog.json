@@ -737,5 +737,281 @@
       "CIA Triad",
       "Threats"
     ]
+  },
+
+    {
+    "course_id": "OPS-K8S-101",
+    "title": "Kubernetes for AI Workloads",
+    "level": "intermediate",
+    "category": "MLOps",
+    "description": "An introduction to K8s specifically for ML engineers. Covers pod orchestration, GPU resource allocation, and scaling FastAPI backends on clusters.",
+    "learning_outcomes": [
+      "Deploy ML models as K8s services",
+      "Configure GPU-enabled worker nodes",
+      "Manage cluster auto-scaling for inference bursts"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 10,
+    "tags": ["Kubernetes", "DevOps", "Scaling"]
+  },
+  {
+    "course_id": "OPS-TRITON-201",
+    "title": "High-Performance Serving with Triton",
+    "level": "advanced",
+    "category": "MLOps",
+    "description": "Using NVIDIA Triton to serve models from multiple frameworks (PyTorch, TensorFlow, ONNX). Covers model ensemble pipelines and dynamic batching for sub-100ms latency.",
+    "learning_outcomes": [
+      "Configure Triton Model Repository",
+      "Implement dynamic batching for high throughput",
+      "Optimize model performance with TensorRT"
+    ],
+    "prerequisites": ["OPS-K8S-101"],
+    "estimated_duration_hours": 15,
+    "tags": ["Triton", "NVIDIA", "Inference", "Latency"]
+  },
+  {
+    "course_id": "SEC-LLM-301",
+    "title": "LLM Red Teaming & Guardrails",
+    "level": "advanced",
+    "category": "AI Security",
+    "description": "Deep dive into LLM vulnerabilities. Learn to simulate prompt injections, implement Lakera/NeMo Guardrails, and secure RAG retrieval from data leakage.",
+    "learning_outcomes": [
+      "Perform adversarial 'red teaming' on LLM prompts",
+      "Implement real-time injection detection layers",
+      "Secure vector retrieval pipelines from PII leakage"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 12,
+    "tags": ["Security", "Red Teaming", "Prompt Injection"]
+  },
+  {
+    "course_id": "DTA-MIL-401",
+    "title": "Billion-Scale Vector Ops",
+    "level": "expert",
+    "category": "Data Engineering",
+    "description": "Scaling beyond managed services. Managing Milvus clusters, fine-tuning HNSW parameters, and partitioning massive datasets for distributed search.",
+    "learning_outcomes": [
+      "Architect distributed Milvus clusters",
+      "Tune index performance for billion-scale search",
+      "Implement complex metadata filtering at scale"
+    ],
+    "prerequisites": ["OPS-K8S-101"],
+    "estimated_duration_hours": 18,
+    "tags": ["Milvus", "Vector DB", "Optimization"]
+  },  
+  {
+    "course_id": "HC-EHR-101",
+    "title": "Enterprise Health Record Admin",
+    "level": "beginner",
+    "category": "Health Informatics",
+    "description": "Introduction to the administrative side of Epic and Cerner. Covers patient population mapping, digital referral tracking, and cross-departmental data integration.",
+    "learning_outcomes": [
+      "Navigate enterprise EHR interfaces",
+      "Audit digital clinical documentation for compliance",
+      "Manage HIPAA-secure data transfers"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 8,
+    "tags": ["EHR", "Epic", "Cerner", "Informatics"]
+  },
+  {
+    "course_id": "HC-UM-201",
+    "title": "Utilization Management & InterQual",
+    "level": "intermediate",
+    "category": "Compliance",
+    "description": "Deep dive into InterQual clinical criteria. Learn how to determine medical necessity for inpatient, observation, and outpatient services to ensure insurance and federal reimbursement.",
+    "learning_outcomes": [
+      "Apply InterQual criteria to clinical scenarios",
+      "Determine appropriate level of care",
+      "Manage clinical appeals and denials"
+    ],
+    "prerequisites": ["HC-EHR-101"],
+    "estimated_duration_hours": 12,
+    "tags": ["InterQual", "UM", "Medical Necessity", "Medicaid"]
+  },
+  {
+    "course_id": "HC-DTA-301",
+    "title": "Clinical Analytics & Power BI",
+    "level": "intermediate",
+    "category": "Data Science",
+    "description": "Converting case notes into data. Learn to build Power BI dashboards that track patient 'Self-Sufficiency' scores, discharge timelines, and program cost-efficiency.",
+    "learning_outcomes": [
+      "Connect clinical databases to Power BI",
+      "Design interactive patient outcome dashboards",
+      "Predict patient readmission risks via data trends"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 10,
+    "tags": ["Power BI", "Analytics", "Dashboards", "KPIs"]
+  },
+
+   {
+    "course_id": "EDU-INF-101",
+    "title": "Mental Health Informatics Foundations",
+    "level": "beginner",
+    "category": "Health Informatics",
+    "description": "The transition from clinical notes to structured data. Learn to manage HIPAA-compliant databases and move from 'observational' reporting to 'analytical' population health tracking.",
+    "learning_outcomes": [
+      "Structure clinical counseling data for HIPAA-compliant analysis",
+      "Navigate Digital Mental Health Records (DMHR)",
+      "Interpret large-scale behavioral health datasets"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 6,
+    "tags": ["Informatics", "Data", "HealthTech", "Basics"]
+  },
+  {
+    "course_id": "EDU-AI-201",
+    "title": "AI in Clinical Crisis Detection",
+    "level": "intermediate",
+    "category": "Clinical AI",
+    "description": "Utilizing Natural Language Processing (NLP) and sentiment analysis to identify risk markers in counseling logs and digital communications for proactive intervention.",
+    "learning_outcomes": [
+      "Understand NLP markers for suicidal ideation and burnout",
+      "Configure AI alerts for crisis team activation",
+      "Audit AI outputs for clinical accuracy and bias"
+    ],
+    "prerequisites": ["EDU-INF-101"],
+    "estimated_duration_hours": 12,
+    "tags": ["AI", "Crisis Intervention", "NLP", "Psychology"]
+  },
+  {
+    "course_id": "EDU-PLAT-301",
+    "title": "Digital EAP Ecosystem Management",
+    "level": "intermediate",
+    "category": "Enterprise Wellness",
+    "description": "Mastering the administration of platforms like Lyra and Spring Health. Learn to deploy automated triage, manage global provider networks, and track employee wellness ROI.",
+    "learning_outcomes": [
+      "Administer enterprise-scale mental health platforms",
+      "Set up automated clinical triage workflows",
+      "Measure and report on the ROI of digital wellness programs"
+    ],
+    "prerequisites": ["EDU-INF-101"],
+    "estimated_duration_hours": 10,
+    "tags": ["EAP", "Enterprise", "Wellness", "Platforms"]
+  },
+  {
+    "course_id": "OPS-K8S-101",
+    "title": "Kubernetes for AI Workloads",
+    "level": "intermediate",
+    "category": "MLOps",
+    "description": "An introduction to K8s specifically for ML engineers. Covers pod orchestration, GPU resource allocation, and scaling FastAPI backends on clusters.",
+    "learning_outcomes": [
+      "Deploy ML models as K8s services",
+      "Configure GPU-enabled worker nodes",
+      "Manage cluster auto-scaling for inference bursts"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 10,
+    "tags": ["Kubernetes", "DevOps", "Scaling"]
+  },
+  {
+    "course_id": "OPS-TRITON-201",
+    "title": "High-Performance Serving with Triton",
+    "level": "advanced",
+    "category": "MLOps",
+    "description": "Using NVIDIA Triton to serve models from multiple frameworks (PyTorch, TensorFlow, ONNX). Covers model ensemble pipelines and dynamic batching for sub-100ms latency.",
+    "learning_outcomes": [
+      "Configure Triton Model Repository",
+      "Implement dynamic batching for high throughput",
+      "Optimize model performance with TensorRT"
+    ],
+    "prerequisites": ["OPS-K8S-101"],
+    "estimated_duration_hours": 15,
+    "tags": ["Triton", "NVIDIA", "Inference", "Latency"]
+  },
+  {
+    "course_id": "SEC-LLM-301",
+    "title": "LLM Red Teaming & Guardrails",
+    "level": "advanced",
+    "category": "AI Security",
+    "description": "Deep dive into LLM vulnerabilities. Learn to simulate prompt injections, implement Lakera/NeMo Guardrails, and secure RAG retrieval from data leakage.",
+    "learning_outcomes": [
+      "Perform adversarial 'red teaming' on LLM prompts",
+      "Implement real-time injection detection layers",
+      "Secure vector retrieval pipelines from PII leakage"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 12,
+    "tags": ["Security", "Red Teaming", "Prompt Injection"]
+  },
+  {
+    "course_id": "DTA-MIL-401",
+    "title": "Billion-Scale Vector Ops",
+    "level": "expert",
+    "category": "Data Engineering",
+    "description": "Scaling beyond managed services. Managing Milvus clusters, fine-tuning HNSW parameters, and partitioning massive datasets for distributed search.",
+    "learning_outcomes": [
+      "Architect distributed Milvus clusters",
+      "Tune index performance for billion-scale search",
+      "Implement complex metadata filtering at scale"
+    ],
+    "prerequisites": ["OPS-K8S-101"],
+    "estimated_duration_hours": 18,
+    "tags": ["Milvus", "Vector DB", "Optimization"]
+  },
+  {
+    "course_id": "BUS-DATA-101",
+    "title": "Data Fundamentals for Talent Ops",
+    "level": "beginner",
+    "category": "Workforce Analytics",
+    "description": "Foundational course on HR metrics and data hygiene. Learn to structure talent data for analysis and move beyond simple spreadsheets.",
+    "learning_outcomes": [
+      "Define key workforce KPIs",
+      "Structure unstructured talent data for reporting",
+      "Basics of data-driven decision making in recruitment"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 5,
+    "tags": ["Data", "HR", "Basics"]
+  },
+  {
+    "course_id": "BUS-SQL-201",
+    "title": "SQL for Workforce Analytics",
+    "level": "intermediate",
+    "category": "Data Science",
+    "description": "Learn to query internal talent databases. Covers JOINs, aggregations, and subqueries to find hiring trends and predict churn.",
+    "learning_outcomes": [
+      "Write SQL queries to extract talent metrics",
+      "Analyze historical hiring data for trends",
+      "Build basic labor supply reports"
+    ],
+    "prerequisites": ["BUS-DATA-101"],
+    "estimated_duration_hours": 12,
+    "tags": ["SQL", "Analytics", "Database"]
+  },
+  {
+    "course_id": "BUS-AI-301",
+    "title": "Mastering AI Talent Platforms",
+    "level": "advanced",
+    "category": "Recruitment Tech",
+    "description": "Deep dive into Eightfold.ai and SeekOut. Learn to use deep-learning matching, skill-adjacency analysis, and automated sourcing bots.",
+    "learning_outcomes": [
+      "Configure AI matching filters",
+      "Analyze talent pools for skill gaps using AI",
+      "Manage automated sourcing workflows"
+    ],
+    "prerequisites": ["BUS-DATA-101"],
+    "estimated_duration_hours": 10,
+    "tags": ["AI", "Eightfold", "Recruitment"]
+  },
+  {
+    "course_id": "BUS-VMS-401",
+    "title": "Enterprise VMS Strategy",
+    "level": "intermediate",
+    "category": "Logistics",
+    "description": "Managing contingent labor at scale using SAP Fieldglass. Covers vendor optimization, bill-rate management, and compliance audits.",
+    "learning_outcomes": [
+      "Navigate SAP Fieldglass VMS",
+      "Optimize bill-rates across global vendors",
+      "Manage contingent workforce compliance"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 8,
+    "tags": ["VMS", "SAP", "Contingent Labor"]
   }
+
+
+
+  
 ]

@@ -115,11 +115,6 @@ class ExperienceItem(BaseModel):
         description="Type of experience: internship, full_time, contract, or freelance"
     )
 
-    duration_months: Optional[int] = Field(
-        None,
-        description="Duration of this role in months. Null if not explicitly mentioned"
-    )
-
     technologies: Optional[List[str]] = Field(
         default_factory=list,
         description="Technologies, tools, or frameworks used in this role"
@@ -134,34 +129,28 @@ class ProjectItem(BaseModel):
     name: str = Field(..., description="Project name")
     technologies: List[str] = Field(
         default_factory=list,
-        description="Technologies used in this project"
+        description="Technologies used in this project ,hence learned in the project"
     )
-    what_was_built: Optional[str] = Field(
-        None,
-        description="One line — what problem it solved or what was built"
-    )
+  
 
 
 class CertificationItem(BaseModel):
     name: str = Field(..., description="Certification name")
-    issuer: Optional[str] = Field(None, description="Issuing organization")
+    
     topics_covered: List[str] = Field(
         default_factory=list,
         description="Key topics or skills the certification covers"
     )
 
 
-class AchievementItem(BaseModel):
-    title: str = Field(..., description="Achievement title")
-    domain: Optional[str] = Field(
-        None,
-        description="Domain of achievement e.g. Competitive Programming, Hackathon, Quiz"
-    )
 
 
 
 
 class ResumeExtract(BaseModel):
+
+
+    candidate_name:Optional[str]
 
     
     job_title: Optional[str] = Field(
@@ -177,14 +166,6 @@ class ResumeExtract(BaseModel):
     
     
 
-    total_experience_months: Optional[int] = Field(
-       0,
-      description=(
-        "Total professional work experience in months. "
-        "Includes internships and full-time roles. "
-        "0 if fresher or no experience found."
-      )
-    )
    
 
    
@@ -207,10 +188,7 @@ class ResumeExtract(BaseModel):
         None,
         description="Certifications with topics they cover. None if not present."
     )
-    achievements: Optional[List[AchievementItem]] = Field(
-        None,
-        description="Accomplishments that signal domain strength or soft skills. None if not present."
-    )
+   
 
 
     is_fresher: bool = Field(
@@ -249,15 +227,6 @@ class RequirementItem(BaseModel):
     )
 
 
-class ConstraintItem(BaseModel):
-    type: str = Field(
-        ...,
-        description="Constraint type such as location, duration, eligibility"
-    )
-    value: str = Field(
-        ...,
-        description="Constraint value (e.g., 'Pune only', '6 months', 'Fresher')"
-    )
 
 
 
@@ -265,26 +234,6 @@ class JobDescriptionExtract(BaseModel):
     job_title: Optional[str] = Field(
         None,
         description="Job role/title (e.g., AI/ML Intern, Web Developer)"
-    )
-
-    company_name: Optional[str] = Field(
-        None,
-        description="Company offering the job"
-    )
-
-    location: Optional[str] = Field(
-        None,
-        description="Job location if specified"
-    )
-
-    employment_type: Optional[str] = Field(
-        None,
-        description="Type of job: internship, full-time, contract"
-    )
-
-    duration_months: Optional[int] = Field(
-        None,
-        description="Duration of role in months (for internships/contracts)"
     )
 
     is_fresher_allowed: Optional[bool] = Field(
@@ -312,10 +261,7 @@ class JobDescriptionExtract(BaseModel):
         description="General requirements like availability, qualifications"
     )
 
-    constraints: Optional[List[ConstraintItem]] = Field(
-        None,
-        description="Special constraints like location restriction, duration, etc."
-    )
+
 
 
 class SkillGap(BaseModel):

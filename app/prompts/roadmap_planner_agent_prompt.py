@@ -38,7 +38,7 @@ personalized learning journey that ensures "Role Competency" in the minimum time
 
 <example_mermaid>
 flowchart TD
-    A([Start — Rahul's current skills]):::start
+    A([Start — Candidate's current skills]):::start
     subgraph W1["Week 1 — Core gaps"]
       B[CS-DOCKER-101\nDocker & Containerization]:::gap
       C[CS-PY-101\nPython Fundamentals]:::known

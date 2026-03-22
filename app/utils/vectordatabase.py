@@ -22,10 +22,10 @@ DATA_PATH = BASE_DIR / "formatted_catalog.json"
 BM25_PKL_PATH = BASE_DIR / "bm25.pkl"
 
 
-# -----------------------------
+
 # General Remote Embeddings
-# aviods cold starts
-# -----------------------------
+# avoids cold starts
+
 
 class GeneralRemoteEmbeddings(Embeddings):
     def __init__(self, endpoint: str):
@@ -88,7 +88,7 @@ if not documents:
 
 pc = Pinecone(api_key=settings.PINECONE_API_KEY)
 
-INDEX_NAME = "catalog-embeddings"
+INDEX_NAME = "final-catalog-index"
 
 if INDEX_NAME not in pc.list_indexes().names():
     pc.create_index(
