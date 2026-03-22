@@ -7,6 +7,8 @@ google-credentials.json
 
 
 /Notebooks
+
+/AI_Engine_Evaluation
 # --- Python Environment ---
 __pycache__/
 *.py[cod]
