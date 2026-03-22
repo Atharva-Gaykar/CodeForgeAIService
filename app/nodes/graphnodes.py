@@ -132,7 +132,7 @@ def skill_gap_node(state: OnboardingState):
 
     messages = [
         SystemMessage(content=gap_analysis_agent_prompt),
-        HumanMessage(content=f"Users Resume:<lean_resume_json>{lean_resume_json}</lean_resume_json> Job Description:<lean_jd_json>{lean_jd_json}</lean_jd_json>"),
+        HumanMessage(content=f"Users Resume:UserName:<candidate_name>{candidate_name}</candidate_name> Resume:<lean_resume_json>{lean_resume_json}</lean_resume_json> Job Description:<lean_jd_json>{lean_jd_json}</lean_jd_json>"),
         
     ]
 
