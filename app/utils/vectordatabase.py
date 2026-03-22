@@ -18,7 +18,7 @@ from app.core.config import settings
 # -----------------------------
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = BASE_DIR / "formatted_catalog.json"
+DATA_PATH = BASE_DIR / "langchain_formatted.json"
 BM25_PKL_PATH = BASE_DIR / "bm25.pkl"
 
 
