@@ -37,7 +37,7 @@ jd_agent=jd_agent.with_structured_output(
 
 
 gap_analysis_agent=ChatGroq(
-    model="moonshotai/kimi-k2-instruct-0905",
+    model="openai/gpt-oss-120b",
     temperature=0.2,
 )
 
@@ -52,7 +52,7 @@ gap_analysis_agent=gap_analysis_agent.with_structured_output(
 
 
 roadmap_planner_agent=ChatGroq(
-    model="moonshotai/kimi-k2-instruct-0905",
+    model="qwen/qwen3-32b",
     temperature=0.2,
 )
 
