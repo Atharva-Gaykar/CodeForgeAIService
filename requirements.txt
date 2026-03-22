@@ -10,3 +10,4 @@ pinecone-text
 sentence-transformers
 python-multipart
 pymupdf
+cloudinary

@@ -5,8 +5,11 @@ from pathlib import Path
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from langgraph.checkpoint.memory import MemorySaver
-
+from app.utils.ui_payload_constructor import UIPayload
+from app.core.config import settings
 from app.graph import graph
+
+WEB_URL=settings.WEB_BASE_URL
 
 app = FastAPI(title="Adaptive Onboarding Engine")
 
@@ -19,31 +22,6 @@ app.add_middleware(
 
 checkpointer = MemorySaver()
 
-# -----------------------------
-# Payload Builder
-# (inline from your export_ui_payload logic)
-# -----------------------------
-
-REQUIRED_KEYS = ["candidate_name", "skill_gap_analysis_data", "mermaid_code", "final_roadmap"]
-
-def build_ui_payload(state: dict) -> dict:
-    ui_data = {}
-    for key in REQUIRED_KEYS:
-        val = state.get(key)
-        if val is None:
-            continue
-        if hasattr(val, "model_dump"):
-            ui_data[key] = val.model_dump()
-        else:
-            ui_data[key] = val
-    return ui_data
-
-
-# -----------------------------
-# POST /analyze
-# Accepts: resume PDF (file upload) + job description (form field)
-# Returns: UI payload JSON
-# -----------------------------
 
 @app.post("/analyze")
 async def analyze(
