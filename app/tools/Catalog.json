@@ -1,0 +1,741 @@
+[
+  {
+    "course_id": "CS-SEC-401",
+    "title": "Network Security & Cryptography",
+    "level": "advanced",
+    "category": "Cybersecurity",
+    "description": "An advanced course covering the mathematical and practical foundations of modern cryptography and network security. Students implement symmetric encryption (AES-GCM), asymmetric encryption (RSA, ECC), digital signatures, and hash functions; configure and troubleshoot TLS 1.3 certificate chains and PKI infrastructure; and use Wireshark to analyze network traffic for protocol anomalies, rogue certificates, and intrusion indicators.",
+    "learning_outcomes": [
+      "Implement symmetric and asymmetric encryption",
+      "Configure TLS/SSL certificates and PKI chains",
+      "Analyze network traffic for anomalies with Wireshark"
+    ],
+    "prerequisites": [
+      "CS-SEC-201"
+    ],
+    "estimated_duration_hours": 12,
+    "tags": [
+      "Cryptography",
+      "TLS",
+      "PKI",
+      "Network Security",
+      "Wireshark"
+    ]
+  },
+  {
+    "course_id": "CS-DOCKER-101",
+    "title": "Docker & Containerization Fundamentals",
+    "level": "beginner",
+    "category": "DevOps",
+    "description": "A practical guide to application containerization using Docker. Students learn to write optimized multi-stage Dockerfiles, manage images and container lifecycles, configure bridge and overlay networking, use named volumes for data persistence, and orchestrate multi-service applications with Docker Compose for local and staging environments.",
+    "learning_outcomes": [
+      "Write efficient multi-stage Dockerfiles",
+      "Manage container lifecycle and networking",
+      "Orchestrate multi-service apps with Docker Compose"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 5,
+    "tags": [
+      "Docker",
+      "Containers",
+      "DevOps",
+      "Docker Compose"
+    ]
+  },
+  {
+    "course_id": "CS-DS-101",
+    "title": "Data Structures & Algorithms",
+    "level": "beginner",
+    "category": "Computer Science",
+    "description": "A rigorous course in core computer science concepts essential for technical interviews and engineering roles. Covers the implementation and analysis of arrays, singly and doubly linked lists, stacks, queues, binary trees, heaps, graphs, and hash tables. Students apply BFS, DFS, dynamic programming, and divide-and-conquer strategies while analyzing time and space complexity using Big-O notation.",
+    "learning_outcomes": [
+      "Implement linked lists, stacks, queues from scratch",
+      "Traverse trees and graphs with BFS and DFS",
+      "Analyze time and space complexity with Big-O"
+    ],
+    "prerequisites": [
+      "CS-PY-101"
+    ],
+    "estimated_duration_hours": 10,
+    "tags": [
+      "DSA",
+      "Algorithms",
+      "Data Structures",
+      "Big-O"
+    ]
+  },
+  {
+    "course_id": "CS-CICD-201",
+    "title": "CI/CD Pipelines with GitHub Actions",
+    "level": "intermediate",
+    "category": "DevOps",
+    "description": "A hands-on course in automating the full software delivery lifecycle using GitHub Actions. Students define multi-job workflows with matrix builds, integrate linting and pytest test suites as required CI checks, automate Docker image builds and pushes to registries, and manage environment secrets and deployment approvals for staging and production environments.",
+    "learning_outcomes": [
+      "Create GitHub Actions workflows for CI/CD",
+      "Automate Docker image builds and pushes",
+      "Manage secrets and environment variables securely"
+    ],
+    "prerequisites": [
+      "CS-DOCKER-101"
+    ],
+    "estimated_duration_hours": 6,
+    "tags": [
+      "CI/CD",
+      "GitHub Actions",
+      "DevOps",
+      "Automation"
+    ]
+  },
+  {
+    "course_id": "CS-SEC-301",
+    "title": "Penetration Testing & Ethical Hacking",
+    "level": "advanced",
+    "category": "Cybersecurity",
+    "description": "A hands-on penetration testing course following the industry-standard PTES (Penetration Testing Execution Standard) methodology. Students perform complete engagements covering passive and active reconnaissance with Nmap, Shodan, and theHarvester; vulnerability scanning and exploitation with Metasploit Framework; post-exploitation privilege escalation on Linux and Windows; and produce professional-grade penetration testing reports.",
+    "learning_outcomes": [
+      "Conduct network reconnaissance with Nmap and Shodan",
+      "Exploit vulnerabilities using Metasploit Framework",
+      "Write professional penetration testing reports"
+    ],
+    "prerequisites": [
+      "CS-SEC-201"
+    ],
+    "estimated_duration_hours": 16,
+    "tags": [
+      "Penetration Testing",
+      "Ethical Hacking",
+      "Kali Linux",
+      "Metasploit"
+    ]
+  },
+  {
+    "course_id": "CS-ML-101",
+    "title": "Machine Learning Fundamentals",
+    "level": "beginner",
+    "category": "Machine Learning",
+    "description": "A practical introduction to machine learning workflows using Python and scikit-learn. Covers the full ML pipeline from data ingestion and preprocessing to feature engineering, model training, hyperparameter tuning with grid search, and evaluation using cross-validation, confusion matrices, and performance metrics for both regression and classification tasks.",
+    "learning_outcomes": [
+      "Train and evaluate classification and regression models",
+      "Apply cross-validation and hyperparameter tuning",
+      "Preprocess and engineer features from raw data"
+    ],
+    "prerequisites": [
+      "CS-PY-101"
+    ],
+    "estimated_duration_hours": 8,
+    "tags": [
+      "Machine Learning",
+      "scikit-learn",
+      "Python",
+      "Supervised Learning"
+    ]
+  },
+  {
+    "course_id": "CS-VEC-101",
+    "title": "Vector Databases & Semantic Search",
+    "level": "intermediate",
+    "category": "AI Engineering",
+    "description": "A practical course on the infrastructure powering modern AI search and retrieval systems. Students generate dense embeddings using OpenAI's API and SentenceTransformers, index and query vectors in Pinecone and Weaviate, implement approximate nearest-neighbor search with HNSW and IVF algorithms, and build end-to-end semantic search applications with relevance re-ranking.",
+    "learning_outcomes": [
+      "Generate and store embeddings with OpenAI and SentenceTransformers",
+      "Build semantic search with Pinecone and Weaviate",
+      "Compare ANN algorithms \u2014 HNSW vs IVF"
+    ],
+    "prerequisites": [
+      "CS-ML-101"
+    ],
+    "estimated_duration_hours": 7,
+    "tags": [
+      "Vector DB",
+      "Pinecone",
+      "Weaviate",
+      "Semantic Search",
+      "Embeddings"
+    ]
+  },
+  {
+    "course_id": "CS-WEB-201",
+    "title": "React.js \u2014 Component Architecture & State Management",
+    "level": "intermediate",
+    "category": "Web Development",
+    "description": "A thorough course in building scalable single-page applications with React. Students design component hierarchies, manage local state with useState and useReducer, share global state using the Context API and Redux Toolkit, optimize renders with useMemo and useCallback, and integrate REST APIs using axios and React Query for server-state synchronization.",
+    "learning_outcomes": [
+      "Build reusable components with props and hooks",
+      "Manage global state with Context API and Redux",
+      "Fetch and display data from REST APIs"
+    ],
+    "prerequisites": [
+      "CS-WEB-101"
+    ],
+    "estimated_duration_hours": 10,
+    "tags": [
+      "React",
+      "JavaScript",
+      "Frontend",
+      "SPA",
+      "Hooks"
+    ]
+  },
+  {
+    "course_id": "CS-WEB-101",
+    "title": "HTML, CSS & JavaScript Fundamentals",
+    "level": "beginner",
+    "category": "Web Development",
+    "description": "A comprehensive foundation course for frontend web development. Students master semantic HTML5 document structure, responsive layout techniques using CSS Flexbox and Grid, the CSS Box Model, and vanilla JavaScript for dynamic DOM manipulation, event handling, asynchronous fetch requests, and client-side form validation.",
+    "learning_outcomes": [
+      "Build responsive layouts with Flexbox and Grid",
+      "Manipulate the DOM with vanilla JavaScript",
+      "Handle browser events and form validation"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 8,
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Frontend"
+    ]
+  },
+  {
+    "course_id": "CS-TEST-201",
+    "title": "Software Testing & Test-Driven Development",
+    "level": "intermediate",
+    "category": "Software Engineering",
+    "description": "A practical course on building reliable software through structured testing. Covers unit testing with pytest including fixtures, parameterization, and mocking external dependencies with unittest.mock. Students practice the TDD red-green-refactor cycle, write integration tests for REST APIs using httpx/TestClient, and measure code coverage to identify untested paths.",
+    "learning_outcomes": [
+      "Write unit tests with pytest and mock dependencies",
+      "Apply TDD red-green-refactor cycle",
+      "Measure and improve code coverage"
+    ],
+    "prerequisites": [
+      "CS-PY-101"
+    ],
+    "estimated_duration_hours": 6,
+    "tags": [
+      "Testing",
+      "pytest",
+      "TDD",
+      "Unit Testing",
+      "Python"
+    ]
+  },
+  {
+    "course_id": "CS-LLM-201",
+    "title": "LLM Application Development with LangChain",
+    "level": "intermediate",
+    "category": "AI Engineering",
+    "description": "A project-focused course on building production LLM applications using the LangChain ecosystem. Students construct multi-step chains with prompt templates and output parsers, build tool-using ReAct agents with LangGraph, implement conversation memory with buffer and summary strategies, and integrate external APIs as agent tools.",
+    "learning_outcomes": [
+      "Build multi-step chains with LangChain",
+      "Create tool-using agents with LangGraph",
+      "Add memory and conversation history to LLM apps"
+    ],
+    "prerequisites": [
+      "CS-PY-201"
+    ],
+    "estimated_duration_hours": 8,
+    "tags": [
+      "LangChain",
+      "LLM",
+      "Agents",
+      "AI",
+      "LangGraph"
+    ]
+  },
+  {
+    "course_id": "CS-FAST-201",
+    "title": "Advanced API Design with FastAPI",
+    "level": "intermediate",
+    "category": "Backend",
+    "description": "An advanced course for engineers building high-performance, secure backend services with FastAPI. Students implement full OAuth2 authorization code and client credentials flows, build async database CRUD endpoints using SQLAlchemy 2.0 with asyncpg, design layered dependency injection architectures, create custom middleware for logging and rate limiting, and run Celery background task queues.",
+    "learning_outcomes": [
+      "Implement OAuth2 authentication flows",
+      "Build async database endpoints with SQLAlchemy",
+      "Use dependency injection and middleware patterns"
+    ],
+    "prerequisites": [
+      "CS-PY-101",
+      "CS-DB-101",
+      "CS-FAST-101"
+    ],
+    "estimated_duration_hours": 8,
+    "tags": [
+      "FastAPI",
+      "Python",
+      "API",
+      "Async",
+      "OAuth2"
+    ]
+  },
+  {
+    "course_id": "CS-CLOUD-201",
+    "title": "AWS Cloud Fundamentals",
+    "level": "beginner",
+    "category": "Cloud",
+    "description": "An introductory course to the Amazon Web Services ecosystem covering the most critical services for backend and infrastructure engineers. Students deploy compute instances on EC2, manage object storage with S3 and lifecycle policies, configure RDS for managed relational databases, define access control through IAM roles and policies, and build event-driven workflows with AWS Lambda.",
+    "learning_outcomes": [
+      "Deploy and configure EC2 instances",
+      "Manage storage with S3 and IAM policies",
+      "Build serverless functions with AWS Lambda"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 8,
+    "tags": [
+      "AWS",
+      "Cloud",
+      "EC2",
+      "S3",
+      "Lambda",
+      "IAM"
+    ]
+  },
+  {
+    "course_id": "CS-CLOUD-301",
+    "title": "Cloud Architecture & Microservices on AWS",
+    "level": "advanced",
+    "category": "Cloud",
+    "description": "A senior-level course on designing and deploying cloud-native, microservices-based architectures on AWS. Students decompose monolithic applications into independently deployable services, implement asynchronous communication using SQS queues and SNS fan-out topics, build and secure public APIs with API Gateway, provision reproducible infrastructure using Terraform, and apply the AWS Well-Architected Framework pillars for reliability and cost optimization.",
+    "learning_outcomes": [
+      "Design event-driven microservices with SQS and SNS",
+      "Build and deploy APIs with API Gateway",
+      "Provision infrastructure using Terraform"
+    ],
+    "prerequisites": [
+      "CS-CLOUD-201",
+      "CS-DOCKER-101"
+    ],
+    "estimated_duration_hours": 14,
+    "tags": [
+      "AWS",
+      "Microservices",
+      "Terraform",
+      "IaC",
+      "API Gateway"
+    ]
+  },
+  {
+    "course_id": "CS-WEB-301",
+    "title": "Full Stack Development with Next.js",
+    "level": "advanced",
+    "category": "Web Development",
+    "description": "A production-grade full stack course using Next.js 14 with the App Router. Students implement Server-Side Rendering, Static Site Generation, and Incremental Static Regeneration for optimal performance, build type-safe API routes and server actions, integrate Prisma ORM for database access, configure middleware for authentication with NextAuth.js, and deploy globally optimized applications on Vercel.",
+    "learning_outcomes": [
+      "Implement SSR and SSG rendering strategies",
+      "Build API routes and middleware in Next.js",
+      "Deploy and optimize full stack apps on Vercel"
+    ],
+    "prerequisites": [
+      "CS-WEB-201",
+      "CS-FAST-101"
+    ],
+    "estimated_duration_hours": 12,
+    "tags": [
+      "Next.js",
+      "React",
+      "Full Stack",
+      "SSR",
+      "Vercel"
+    ]
+  },
+  {
+    "course_id": "CS-GIT-101",
+    "title": "Git & Version Control for Teams",
+    "level": "beginner",
+    "category": "Software Engineering",
+    "description": "A practical course on collaborative version control using Git. Covers branching strategies including Git Flow and trunk-based development, interactive rebasing, cherry-picking, resolving complex merge conflicts, and establishing pull request review standards that improve team velocity and code quality.",
+    "learning_outcomes": [
+      "Apply Git Flow and trunk-based development",
+      "Resolve merge conflicts confidently",
+      "Write meaningful commit messages and PRs"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 3,
+    "tags": [
+      "Git",
+      "Version Control",
+      "GitHub",
+      "Collaboration"
+    ]
+  },
+  {
+    "course_id": "CS-K8S-301",
+    "title": "Kubernetes \u2014 Container Orchestration at Scale",
+    "level": "advanced",
+    "category": "DevOps",
+    "description": "A comprehensive course on running containerized workloads in production with Kubernetes. Students deploy stateless and stateful applications using Deployments and StatefulSets, expose services through ClusterIP, NodePort, and Ingress controllers, manage configuration and secrets with ConfigMaps and Secrets, autoscale workloads with HPA, and package applications for repeatable releases using Helm charts.",
+    "learning_outcomes": [
+      "Deploy applications using Deployments and StatefulSets",
+      "Configure Services, Ingress, and ConfigMaps",
+      "Manage releases with Helm charts"
+    ],
+    "prerequisites": [
+      "CS-DOCKER-101",
+      "CS-CICD-201"
+    ],
+    "estimated_duration_hours": 14,
+    "tags": [
+      "Kubernetes",
+      "K8s",
+      "DevOps",
+      "Helm",
+      "Scaling"
+    ]
+  },
+  {
+    "course_id": "CS-PY-101",
+    "title": "Python Programming Fundamentals",
+    "level": "beginner",
+    "category": "Programming",
+    "description": "A comprehensive introduction to Python covering primitive and complex data types, control flow structures, function design, object-oriented programming principles, exception handling, and file I/O. Students build a strong syntactic and conceptual foundation before moving to applied domains.",
+    "learning_outcomes": [
+      "Write clean Python functions and classes",
+      "Understand list, dict, and set operations",
+      "Handle exceptions and file I/O"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 6,
+    "tags": [
+      "Python",
+      "Programming",
+      "OOP"
+    ]
+  },
+  {
+    "course_id": "CS-FINETUNE-301",
+    "title": "LLM Fine-Tuning with LoRA & PEFT",
+    "level": "advanced",
+    "category": "AI Engineering",
+    "description": "An advanced course on adapting pre-trained large language models for domain-specific tasks using parameter-efficient methods. Students curate and format instruction-tuning datasets in Alpaca and ChatML formats, apply Low-Rank Adaptation (LoRA) and Quantized LoRA (QLoRA) using the Hugging Face PEFT and TRL libraries, configure SFTTrainer for supervised fine-tuning, and rigorously evaluate adapted models using ROUGE scores, perplexity, and human preference benchmarks.",
+    "learning_outcomes": [
+      "Prepare and format instruction-tuning datasets",
+      "Fine-tune LLMs using LoRA with Hugging Face",
+      "Evaluate fine-tuned models with ROUGE and perplexity"
+    ],
+    "prerequisites": [
+      "CS-DL-201",
+      "CS-LLM-201"
+    ],
+    "estimated_duration_hours": 14,
+    "tags": [
+      "Fine-Tuning",
+      "LoRA",
+      "PEFT",
+      "Hugging Face",
+      "LLM"
+    ]
+  },
+  {
+    "course_id": "CS-FAST-101",
+    "title": "REST API Development with FastAPI",
+    "level": "beginner",
+    "category": "Backend",
+    "description": "A project-driven course for building production-quality REST APIs with Python's FastAPI framework. Students learn to define typed routes with path and query parameters, leverage Pydantic models for automatic request validation and serialization, implement dependency injection, and secure endpoints using JWT-based Bearer token authentication.",
+    "learning_outcomes": [
+      "Create REST endpoints with path and query params",
+      "Validate request/response with Pydantic models",
+      "Implement JWT-based authentication"
+    ],
+    "prerequisites": [
+      "CS-PY-101"
+    ],
+    "estimated_duration_hours": 6,
+    "tags": [
+      "FastAPI",
+      "Python",
+      "REST API",
+      "Pydantic"
+    ]
+  },
+  {
+    "course_id": "CS-DL-201",
+    "title": "Deep Learning with PyTorch",
+    "level": "intermediate",
+    "category": "Machine Learning",
+    "description": "A rigorous course in deep learning using the PyTorch framework. Students implement feedforward networks, convolutional neural networks for image classification, recurrent architectures for sequence modeling, and learn to write efficient custom training loops with GPU acceleration. Covers batch normalization, dropout regularization, and learning rate scheduling for model optimization.",
+    "learning_outcomes": [
+      "Build custom neural networks with nn.Module",
+      "Train CNNs on image classification tasks",
+      "Optimize models with learning rate schedulers"
+    ],
+    "prerequisites": [
+      "CS-ML-101"
+    ],
+    "estimated_duration_hours": 12,
+    "tags": [
+      "PyTorch",
+      "Deep Learning",
+      "CNN",
+      "GPU",
+      "Neural Networks"
+    ]
+  },
+  {
+    "course_id": "CS-DB-101",
+    "title": "SQL Fundamentals for Backend Developers",
+    "level": "beginner",
+    "category": "Database",
+    "description": "A hands-on introduction to relational database theory and practice using SQLite and PostgreSQL. Students learn to model data with schemas, enforce referential integrity through primary and foreign keys, and interact with data using full CRUD operations and multi-table JOINs.",
+    "learning_outcomes": [
+      "Write basic SELECT queries with filters",
+      "Understand Primary and Foreign Keys",
+      "Perform data insertion, updates, and deletions"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 4,
+    "tags": [
+      "SQL",
+      "PostgreSQL",
+      "Database",
+      "Backend"
+    ]
+  },
+  {
+    "course_id": "CS-SEC-201",
+    "title": "Web Application Security & OWASP Top 10",
+    "level": "intermediate",
+    "category": "Cybersecurity",
+    "description": "A practical security course structured around the OWASP Top 10 most critical web application risks. Students perform hands-on exploitation of SQL injection, reflected and stored XSS, CSRF, broken access control, and insecure deserialization vulnerabilities in sandboxed environments, then implement the corresponding mitigations in Python and JavaScript web applications.",
+    "learning_outcomes": [
+      "Exploit and patch SQL injection vulnerabilities",
+      "Prevent XSS and CSRF attacks in web apps",
+      "Implement secure authentication and session management"
+    ],
+    "prerequisites": [
+      "CS-SEC-101",
+      "CS-WEB-101"
+    ],
+    "estimated_duration_hours": 10,
+    "tags": [
+      "OWASP",
+      "Web Security",
+      "XSS",
+      "SQL Injection",
+      "CSRF"
+    ]
+  },
+  {
+    "course_id": "CS-NLP-201",
+    "title": "NLP with Hugging Face Transformers",
+    "level": "intermediate",
+    "category": "Machine Learning",
+    "description": "An applied NLP course using the Hugging Face Transformers library and Datasets ecosystem. Students tokenize and preprocess text corpora, fine-tune pre-trained BERT and RoBERTa models for sequence classification and named entity recognition tasks, apply parameter-efficient techniques, and rigorously evaluate model quality using F1-score, precision, recall, and confusion analysis.",
+    "learning_outcomes": [
+      "Tokenize and preprocess text with Hugging Face",
+      "Fine-tune BERT for classification and NER tasks",
+      "Evaluate NLP models with F1, precision, and recall"
+    ],
+    "prerequisites": [
+      "CS-DL-201"
+    ],
+    "estimated_duration_hours": 10,
+    "tags": [
+      "NLP",
+      "Hugging Face",
+      "BERT",
+      "Transformers",
+      "Text Classification"
+    ]
+  },
+  {
+    "course_id": "CS-DB-201",
+    "title": "Advanced SQL \u2014 Indexing, Transactions & Query Optimization",
+    "level": "intermediate",
+    "category": "Database",
+    "description": "A deep dive into production-grade SQL performance and reliability. Students master analytical window functions, Common Table Expressions (CTEs), query execution plan analysis using EXPLAIN/ANALYZE, B-tree and partial index strategies, and ACID-compliant transaction management including deadlock detection and prevention.",
+    "learning_outcomes": [
+      "Use window functions and CTEs",
+      "Analyze and optimize slow queries with EXPLAIN",
+      "Manage ACID transactions and deadlock prevention"
+    ],
+    "prerequisites": [
+      "CS-DB-101"
+    ],
+    "estimated_duration_hours": 7,
+    "tags": [
+      "SQL",
+      "PostgreSQL",
+      "Indexing",
+      "Performance"
+    ]
+  },
+  {
+    "course_id": "CS-SYSDESIGN-301",
+    "title": "System Design for Engineers",
+    "level": "advanced",
+    "category": "System Design",
+    "description": "A senior engineer's course on designing large-scale distributed systems with an emphasis on real interview and production scenarios. Students apply horizontal and vertical scaling principles, implement multi-tier caching strategies with Redis and CDN edge networks, design database sharding and replication topologies, analyze trade-offs using the CAP theorem and eventual consistency models, and architect well-known systems including URL shorteners, distributed message queues, and social media feed algorithms.",
+    "learning_outcomes": [
+      "Design systems for horizontal and vertical scaling",
+      "Apply caching strategies with Redis and CDN",
+      "Architect URL shorteners, chat systems, and feed algorithms"
+    ],
+    "prerequisites": [
+      "CS-DB-201",
+      "CS-CLOUD-201"
+    ],
+    "estimated_duration_hours": 12,
+    "tags": [
+      "System Design",
+      "Scalability",
+      "Caching",
+      "Load Balancing",
+      "CAP Theorem"
+    ]
+  },
+  {
+    "course_id": "CS-DB-301",
+    "title": "NoSQL Databases \u2014 MongoDB & Redis",
+    "level": "intermediate",
+    "category": "Database",
+    "description": "Practical training in document and key-value store paradigms for modern applications. Covers MongoDB schema design, flexible document modeling, the aggregation pipeline for complex data transformations, and Redis as both a high-speed caching layer and a pub/sub message broker with TTL-based eviction strategies.",
+    "learning_outcomes": [
+      "Design document schemas in MongoDB",
+      "Build aggregation pipelines",
+      "Implement caching with Redis TTL strategies"
+    ],
+    "prerequisites": [
+      "CS-DB-101"
+    ],
+    "estimated_duration_hours": 6,
+    "tags": [
+      "MongoDB",
+      "Redis",
+      "NoSQL",
+      "Caching"
+    ]
+  },
+  {
+    "course_id": "CS-MLOPS-301",
+    "title": "MLOps \u2014 Model Deployment & Monitoring",
+    "level": "advanced",
+    "category": "AI Engineering",
+    "description": "An end-to-end MLOps course covering the full lifecycle of production machine learning systems. Students track experiments and version datasets and models using MLflow, build model serving APIs with FastAPI, containerize inference services with Docker, set up automated retraining pipelines triggered by data drift detection using Evidently AI, and monitor prediction quality and infrastructure health with Grafana dashboards.",
+    "learning_outcomes": [
+      "Track experiments and version models with MLflow",
+      "Serve ML models via FastAPI and Docker",
+      "Monitor model drift and set up retraining triggers"
+    ],
+    "prerequisites": [
+      "CS-ML-101",
+      "CS-DOCKER-101",
+      "CS-FAST-101"
+    ],
+    "estimated_duration_hours": 12,
+    "tags": [
+      "MLOps",
+      "MLflow",
+      "Model Serving",
+      "Docker",
+      "Monitoring"
+    ]
+  },
+  {
+    "course_id": "CS-WEBSEC-401",
+    "title": "API Security \u2014 JWT, OAuth2 & Rate Limiting",
+    "level": "advanced",
+    "category": "Cybersecurity",
+    "description": "A specialized course on hardening APIs against modern attack surfaces. Students implement the full OAuth2 authorization code flow with PKCE and the client credentials flow for machine-to-machine authentication, secure JWTs against algorithm confusion, token hijacking, and replay attacks, enforce API key rotation policies, and apply sliding window and token bucket rate limiting strategies using Redis to protect against abuse and DDoS.",
+    "learning_outcomes": [
+      "Implement OAuth2 authorization code and client credentials flows",
+      "Secure APIs against token hijacking and replay attacks",
+      "Apply rate limiting and throttling strategies"
+    ],
+    "prerequisites": [
+      "CS-SEC-201",
+      "CS-FAST-101"
+    ],
+    "estimated_duration_hours": 8,
+    "tags": [
+      "API Security",
+      "JWT",
+      "OAuth2",
+      "Rate Limiting",
+      "Backend Security"
+    ]
+  },
+  {
+    "course_id": "CS-LINUX-101",
+    "title": "Linux & Shell Scripting for Developers",
+    "level": "beginner",
+    "category": "DevOps",
+    "description": "Practical Linux proficiency for software developers working in Unix-like environments. Covers the filesystem hierarchy, file permissions and ownership models, user and group management, process monitoring with ps/top/htop, cron job scheduling, and writing production-ready bash scripts for automation and deployment tasks.",
+    "learning_outcomes": [
+      "Navigate and manage the Linux file system",
+      "Write bash scripts for automation",
+      "Manage processes, cron jobs, and system services"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 5,
+    "tags": [
+      "Linux",
+      "Bash",
+      "Shell Scripting",
+      "DevOps",
+      "CLI"
+    ]
+  },
+  {
+    "course_id": "CS-RAG-201",
+    "title": "RAG Pipeline Design & Vector Databases",
+    "level": "intermediate",
+    "category": "AI Engineering",
+    "description": "A production-focused course on Retrieval-Augmented Generation systems. Students design document ingestion pipelines with chunking strategies (fixed-size, semantic, recursive), generate and store embeddings in Pinecone, implement hybrid retrieval combining dense vector search with BM25 sparse search, apply Cohere re-ranking for precision improvement, and evaluate end-to-end RAG quality using RAGAS metrics.",
+    "learning_outcomes": [
+      "Build end-to-end RAG pipelines with Pinecone",
+      "Apply hybrid search \u2014 dense + sparse retrieval",
+      "Evaluate RAG quality with precision and recall metrics"
+    ],
+    "prerequisites": [
+      "CS-LLM-201"
+    ],
+    "estimated_duration_hours": 10,
+    "tags": [
+      "RAG",
+      "Pinecone",
+      "Embeddings",
+      "Vector DB",
+      "LangChain"
+    ]
+  },
+  {
+    "course_id": "CS-PY-201",
+    "title": "Advanced Python \u2014 Async, Decorators & Design Patterns",
+    "level": "intermediate",
+    "category": "Programming",
+    "description": "An in-depth exploration of Python internals and professional engineering patterns. Covers the asyncio event loop, coroutine scheduling, context managers, metaclass programming, and the practical application of Gang-of-Four design patterns such as Factory, Singleton, and Observer in real-world codebases.",
+    "learning_outcomes": [
+      "Write async/await coroutines",
+      "Build custom decorators and context managers",
+      "Apply Factory, Singleton, and Observer patterns"
+    ],
+    "prerequisites": [
+      "CS-PY-101"
+    ],
+    "estimated_duration_hours": 8,
+    "tags": [
+      "Python",
+      "Async",
+      "Design Patterns"
+    ]
+  },
+  {
+    "course_id": "CS-SEC-101",
+    "title": "Cybersecurity Fundamentals",
+    "level": "beginner",
+    "category": "Cybersecurity",
+    "description": "A foundational survey of cybersecurity principles designed for developers and engineers. Introduces the CIA triad (Confidentiality, Integrity, Availability), threat modeling, common attack vectors including phishing, man-in-the-middle, and denial-of-service attacks, and practical defensive practices such as least-privilege access and patch management.",
+    "learning_outcomes": [
+      "Understand confidentiality, integrity, and availability",
+      "Identify common threats \u2014 phishing, MITM, DoS",
+      "Apply basic security hygiene and password policies"
+    ],
+    "prerequisites": [],
+    "estimated_duration_hours": 5,
+    "tags": [
+      "Cybersecurity",
+      "Security",
+      "CIA Triad",
+      "Threats"
+    ]
+  }
+]
