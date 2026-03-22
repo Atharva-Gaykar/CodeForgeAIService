@@ -1,7 +1,7 @@
 # --- Secrets & Credentials ---
 .env
 google-credentials.json
-*.json
+
 !composer.json  # If you use composer (optional)
 /venv
 
