@@ -738,22 +738,6 @@
       "Threats"
     ]
   },
-
-    {
-    "course_id": "OPS-K8S-101",
-    "title": "Kubernetes for AI Workloads",
-    "level": "intermediate",
-    "category": "MLOps",
-    "description": "An introduction to K8s specifically for ML engineers. Covers pod orchestration, GPU resource allocation, and scaling FastAPI backends on clusters.",
-    "learning_outcomes": [
-      "Deploy ML models as K8s services",
-      "Configure GPU-enabled worker nodes",
-      "Manage cluster auto-scaling for inference bursts"
-    ],
-    "prerequisites": [],
-    "estimated_duration_hours": 10,
-    "tags": ["Kubernetes", "DevOps", "Scaling"]
-  },
   {
     "course_id": "OPS-TRITON-201",
     "title": "High-Performance Serving with Triton",
@@ -1010,8 +994,4 @@
     "estimated_duration_hours": 8,
     "tags": ["VMS", "SAP", "Contingent Labor"]
   }
-
-
-
-  
 ]

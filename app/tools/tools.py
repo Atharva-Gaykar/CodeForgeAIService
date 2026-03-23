@@ -7,45 +7,39 @@ from typing import Dict, List,Any
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 
+
+
 @tool
-def search_courses(query: str, level: str, category: str):
+def search_courses(query: str):
     """
-    Search the course catalog for relevant modules based on a skill query, 
-    difficulty level, and technical category.
+    Search the course catalog for relevant modules based on a skill query 
+    
     
     Args:
-        query: The semantic search term (e.g., 'FastAPI', 'PostgreSQL', 'Docker').
-        level: The difficulty level required ('beginner', 'intermediate', or 'strong').
-        category: The technical domain ('Backend', 'Frontend', 'DevOps', 'Cybersecurity', 'Database', 'ML').
+       
+      query:the skill to find with  semantic terms (e.g., 'FastAPI', 'PostgreSQL', 'Docker','Enterprise VMS Strategy','Utilization Management').
+       
     """
     
-    # Using the hybrid search logic you perfected
-    # The '$and' ensures the agent gets EXACTLY what fits the candidate's level
     results = retriever.invoke(
-        query, 
-        filter={
-            "$and": [
-                {"level": level},
-                {"category": category}
-            ]
-        }
+        query
     )
 
     if not results:
-        return f"No {level} level courses found in the {category} category for '{query}'."
+        return f"No courses found  for '{query}'."
 
-    # Format the output so the Agent can read the metadata easily
     formatted_output = []
     for doc in results:
-        course_info = (
-            f"ID: {doc.metadata.get('course_id')}\n"
-            f"Title: {doc.metadata.get('title')}\n"
-            f"Description: {doc.page_content}\n"
-            f"Prerequisites: {doc.metadata.get('prerequisites')}\n"
-            f"Duration: {doc.metadata.get('duration')} hours\n"
+        course_id = doc.metadata.get('course_id', 'N/A')
+        
+        # We include the ID for roadmap generation, followed by the full context
+        # created during the transformation stage (Title, Desc, Outcomes, Prereqs).
+        course_block = (
+            f"ID: {course_id}\n"
+            f"{doc.page_content}\n"
             "---"
         )
-        formatted_output.append(course_info)
+        formatted_output.append(course_block)
 
     return "\n".join(formatted_output)
 

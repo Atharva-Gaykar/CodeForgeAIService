@@ -1,6 +1,6 @@
 [
   {
-    "page_content": "Title: Network Security & Cryptography. Description: An advanced course covering the mathematical and practical foundations of modern cryptography and network security. Students implement symmetric encryption (AES-GCM), asymmetric encryption (RSA, ECC), digital signatures, and hash functions; configure and troubleshoot TLS 1.3 certificate chains and PKI infrastructure; and use Wireshark to analyze network traffic for protocol anomalies, rogue certificates, and intrusion indicators.. Outcomes: Implement symmetric and asymmetric encryption, Configure TLS/SSL certificates and PKI chains, Analyze network traffic for anomalies with Wireshark",
+    "page_content": "Course Title: Network Security & Cryptography\nCategory: Cybersecurity\nDescription: An advanced course covering the mathematical and practical foundations of modern cryptography and network security. Students implement symmetric encryption (AES-GCM), asymmetric encryption (RSA, ECC), digital signatures, and hash functions; configure and troubleshoot TLS 1.3 certificate chains and PKI infrastructure; and use Wireshark to analyze network traffic for protocol anomalies, rogue certificates, and intrusion indicators.\nLearning Outcomes: Implement symmetric and asymmetric encryption, Configure TLS/SSL certificates and PKI chains, Analyze network traffic for anomalies with Wireshark\nPrerequisites: CS-SEC-201",
     "metadata": {
       "course_id": "CS-SEC-401",
       "category": "Cybersecurity",
@@ -19,7 +19,7 @@
     }
   },
   {
-    "page_content": "Title: Docker & Containerization Fundamentals. Description: A practical guide to application containerization using Docker. Students learn to write optimized multi-stage Dockerfiles, manage images and container lifecycles, configure bridge and overlay networking, use named volumes for data persistence, and orchestrate multi-service applications with Docker Compose for local and staging environments.. Outcomes: Write efficient multi-stage Dockerfiles, Manage container lifecycle and networking, Orchestrate multi-service apps with Docker Compose",
+    "page_content": "Course Title: Docker & Containerization Fundamentals\nCategory: DevOps\nDescription: A practical guide to application containerization using Docker. Students learn to write optimized multi-stage Dockerfiles, manage images and container lifecycles, configure bridge and overlay networking, use named volumes for data persistence, and orchestrate multi-service applications with Docker Compose for local and staging environments.\nLearning Outcomes: Write efficient multi-stage Dockerfiles, Manage container lifecycle and networking, Orchestrate multi-service apps with Docker Compose\nPrerequisites: None",
     "metadata": {
       "course_id": "CS-DOCKER-101",
       "category": "DevOps",
@@ -35,7 +35,7 @@
     }
   },
   {
-    "page_content": "Title: Data Structures & Algorithms. Description: A rigorous course in core computer science concepts essential for technical interviews and engineering roles. Covers the implementation and analysis of arrays, singly and doubly linked lists, stacks, queues, binary trees, heaps, graphs, and hash tables. Students apply BFS, DFS, dynamic programming, and divide-and-conquer strategies while analyzing time and space complexity using Big-O notation.. Outcomes: Implement linked lists, stacks, queues from scratch, Traverse trees and graphs with BFS and DFS, Analyze time and space complexity with Big-O",
+    "page_content": "Course Title: Data Structures & Algorithms\nCategory: Computer Science\nDescription: A rigorous course in core computer science concepts essential for technical interviews and engineering roles. Covers the implementation and analysis of arrays, singly and doubly linked lists, stacks, queues, binary trees, heaps, graphs, and hash tables. Students apply BFS, DFS, dynamic programming, and divide-and-conquer strategies while analyzing time and space complexity using Big-O notation.\nLearning Outcomes: Implement linked lists, stacks, queues from scratch, Traverse trees and graphs with BFS and DFS, Analyze time and space complexity with Big-O\nPrerequisites: CS-PY-101",
     "metadata": {
       "course_id": "CS-DS-101",
       "category": "Computer Science",
@@ -53,7 +53,7 @@
     }
   },
   {
-    "page_content": "Title: CI/CD Pipelines with GitHub Actions. Description: A hands-on course in automating the full software delivery lifecycle using GitHub Actions. Students define multi-job workflows with matrix builds, integrate linting and pytest test suites as required CI checks, automate Docker image builds and pushes to registries, and manage environment secrets and deployment approvals for staging and production environments.. Outcomes: Create GitHub Actions workflows for CI/CD, Automate Docker image builds and pushes, Manage secrets and environment variables securely",
+    "page_content": "Course Title: CI/CD Pipelines with GitHub Actions\nCategory: DevOps\nDescription: A hands-on course in automating the full software delivery lifecycle using GitHub Actions. Students define multi-job workflows with matrix builds, integrate linting and pytest test suites as required CI checks, automate Docker image builds and pushes to registries, and manage environment secrets and deployment approvals for staging and production environments.\nLearning Outcomes: Create GitHub Actions workflows for CI/CD, Automate Docker image builds and pushes, Manage secrets and environment variables securely\nPrerequisites: CS-DOCKER-101",
     "metadata": {
       "course_id": "CS-CICD-201",
       "category": "DevOps",
@@ -71,7 +71,7 @@
     }
   },
   {
-    "page_content": "Title: Penetration Testing & Ethical Hacking. Description: A hands-on penetration testing course following the industry-standard PTES (Penetration Testing Execution Standard) methodology. Students perform complete engagements covering passive and active reconnaissance with Nmap, Shodan, and theHarvester; vulnerability scanning and exploitation with Metasploit Framework; post-exploitation privilege escalation on Linux and Windows; and produce professional-grade penetration testing reports.. Outcomes: Conduct network reconnaissance with Nmap and Shodan, Exploit vulnerabilities using Metasploit Framework, Write professional penetration testing reports",
+    "page_content": "Course Title: Penetration Testing & Ethical Hacking\nCategory: Cybersecurity\nDescription: A hands-on penetration testing course following the industry-standard PTES (Penetration Testing Execution Standard) methodology. Students perform complete engagements covering passive and active reconnaissance with Nmap, Shodan, and theHarvester; vulnerability scanning and exploitation with Metasploit Framework; post-exploitation privilege escalation on Linux and Windows; and produce professional-grade penetration testing reports.\nLearning Outcomes: Conduct network reconnaissance with Nmap and Shodan, Exploit vulnerabilities using Metasploit Framework, Write professional penetration testing reports\nPrerequisites: CS-SEC-201",
     "metadata": {
       "course_id": "CS-SEC-301",
       "category": "Cybersecurity",
@@ -89,7 +89,7 @@
     }
   },
   {
-    "page_content": "Title: Machine Learning Fundamentals. Description: A practical introduction to machine learning workflows using Python and scikit-learn. Covers the full ML pipeline from data ingestion and preprocessing to feature engineering, model training, hyperparameter tuning with grid search, and evaluation using cross-validation, confusion matrices, and performance metrics for both regression and classification tasks.. Outcomes: Train and evaluate classification and regression models, Apply cross-validation and hyperparameter tuning, Preprocess and engineer features from raw data",
+    "page_content": "Course Title: Machine Learning Fundamentals\nCategory: Machine Learning\nDescription: A practical introduction to machine learning workflows using Python and scikit-learn. Covers the full ML pipeline from data ingestion and preprocessing to feature engineering, model training, hyperparameter tuning with grid search, and evaluation using cross-validation, confusion matrices, and performance metrics for both regression and classification tasks.\nLearning Outcomes: Train and evaluate classification and regression models, Apply cross-validation and hyperparameter tuning, Preprocess and engineer features from raw data\nPrerequisites: CS-PY-101",
     "metadata": {
       "course_id": "CS-ML-101",
       "category": "Machine Learning",
@@ -107,7 +107,7 @@
     }
   },
   {
-    "page_content": "Title: Vector Databases & Semantic Search. Description: A practical course on the infrastructure powering modern AI search and retrieval systems. Students generate dense embeddings using OpenAI's API and SentenceTransformers, index and query vectors in Pinecone and Weaviate, implement approximate nearest-neighbor search with HNSW and IVF algorithms, and build end-to-end semantic search applications with relevance re-ranking.. Outcomes: Generate and store embeddings with OpenAI and SentenceTransformers, Build semantic search with Pinecone and Weaviate, Compare ANN algorithms \u2014 HNSW vs IVF",
+    "page_content": "Course Title: Vector Databases & Semantic Search\nCategory: AI Engineering\nDescription: A practical course on the infrastructure powering modern AI search and retrieval systems. Students generate dense embeddings using OpenAI's API and SentenceTransformers, index and query vectors in Pinecone and Weaviate, implement approximate nearest-neighbor search with HNSW and IVF algorithms, and build end-to-end semantic search applications with relevance re-ranking.\nLearning Outcomes: Generate and store embeddings with OpenAI and SentenceTransformers, Build semantic search with Pinecone and Weaviate, Compare ANN algorithms \u2014 HNSW vs IVF\nPrerequisites: CS-ML-101",
     "metadata": {
       "course_id": "CS-VEC-101",
       "category": "AI Engineering",
@@ -126,7 +126,7 @@
     }
   },
   {
-    "page_content": "Title: React.js \u2014 Component Architecture & State Management. Description: A thorough course in building scalable single-page applications with React. Students design component hierarchies, manage local state with useState and useReducer, share global state using the Context API and Redux Toolkit, optimize renders with useMemo and useCallback, and integrate REST APIs using axios and React Query for server-state synchronization.. Outcomes: Build reusable components with props and hooks, Manage global state with Context API and Redux, Fetch and display data from REST APIs",
+    "page_content": "Course Title: React.js \u2014 Component Architecture & State Management\nCategory: Web Development\nDescription: A thorough course in building scalable single-page applications with React. Students design component hierarchies, manage local state with useState and useReducer, share global state using the Context API and Redux Toolkit, optimize renders with useMemo and useCallback, and integrate REST APIs using axios and React Query for server-state synchronization.\nLearning Outcomes: Build reusable components with props and hooks, Manage global state with Context API and Redux, Fetch and display data from REST APIs\nPrerequisites: CS-WEB-101",
     "metadata": {
       "course_id": "CS-WEB-201",
       "category": "Web Development",
@@ -145,7 +145,7 @@
     }
   },
   {
-    "page_content": "Title: HTML, CSS & JavaScript Fundamentals. Description: A comprehensive foundation course for frontend web development. Students master semantic HTML5 document structure, responsive layout techniques using CSS Flexbox and Grid, the CSS Box Model, and vanilla JavaScript for dynamic DOM manipulation, event handling, asynchronous fetch requests, and client-side form validation.. Outcomes: Build responsive layouts with Flexbox and Grid, Manipulate the DOM with vanilla JavaScript, Handle browser events and form validation",
+    "page_content": "Course Title: HTML, CSS & JavaScript Fundamentals\nCategory: Web Development\nDescription: A comprehensive foundation course for frontend web development. Students master semantic HTML5 document structure, responsive layout techniques using CSS Flexbox and Grid, the CSS Box Model, and vanilla JavaScript for dynamic DOM manipulation, event handling, asynchronous fetch requests, and client-side form validation.\nLearning Outcomes: Build responsive layouts with Flexbox and Grid, Manipulate the DOM with vanilla JavaScript, Handle browser events and form validation\nPrerequisites: None",
     "metadata": {
       "course_id": "CS-WEB-101",
       "category": "Web Development",
@@ -161,7 +161,7 @@
     }
   },
   {
-    "page_content": "Title: Software Testing & Test-Driven Development. Description: A practical course on building reliable software through structured testing. Covers unit testing with pytest including fixtures, parameterization, and mocking external dependencies with unittest.mock. Students practice the TDD red-green-refactor cycle, write integration tests for REST APIs using httpx/TestClient, and measure code coverage to identify untested paths.. Outcomes: Write unit tests with pytest and mock dependencies, Apply TDD red-green-refactor cycle, Measure and improve code coverage",
+    "page_content": "Course Title: Software Testing & Test-Driven Development\nCategory: Software Engineering\nDescription: A practical course on building reliable software through structured testing. Covers unit testing with pytest including fixtures, parameterization, and mocking external dependencies with unittest.mock. Students practice the TDD red-green-refactor cycle, write integration tests for REST APIs using httpx/TestClient, and measure code coverage to identify untested paths.\nLearning Outcomes: Write unit tests with pytest and mock dependencies, Apply TDD red-green-refactor cycle, Measure and improve code coverage\nPrerequisites: CS-PY-101",
     "metadata": {
       "course_id": "CS-TEST-201",
       "category": "Software Engineering",
@@ -180,7 +180,7 @@
     }
   },
   {
-    "page_content": "Title: LLM Application Development with LangChain. Description: A project-focused course on building production LLM applications using the LangChain ecosystem. Students construct multi-step chains with prompt templates and output parsers, build tool-using ReAct agents with LangGraph, implement conversation memory with buffer and summary strategies, and integrate external APIs as agent tools.. Outcomes: Build multi-step chains with LangChain, Create tool-using agents with LangGraph, Add memory and conversation history to LLM apps",
+    "page_content": "Course Title: LLM Application Development with LangChain\nCategory: AI Engineering\nDescription: A project-focused course on building production LLM applications using the LangChain ecosystem. Students construct multi-step chains with prompt templates and output parsers, build tool-using ReAct agents with LangGraph, implement conversation memory with buffer and summary strategies, and integrate external APIs as agent tools.\nLearning Outcomes: Build multi-step chains with LangChain, Create tool-using agents with LangGraph, Add memory and conversation history to LLM apps\nPrerequisites: CS-PY-201",
     "metadata": {
       "course_id": "CS-LLM-201",
       "category": "AI Engineering",
@@ -199,7 +199,7 @@
     }
   },
   {
-    "page_content": "Title: Advanced API Design with FastAPI. Description: An advanced course for engineers building high-performance, secure backend services with FastAPI. Students implement full OAuth2 authorization code and client credentials flows, build async database CRUD endpoints using SQLAlchemy 2.0 with asyncpg, design layered dependency injection architectures, create custom middleware for logging and rate limiting, and run Celery background task queues.. Outcomes: Implement OAuth2 authentication flows, Build async database endpoints with SQLAlchemy, Use dependency injection and middleware patterns",
+    "page_content": "Course Title: Advanced API Design with FastAPI\nCategory: Backend\nDescription: An advanced course for engineers building high-performance, secure backend services with FastAPI. Students implement full OAuth2 authorization code and client credentials flows, build async database CRUD endpoints using SQLAlchemy 2.0 with asyncpg, design layered dependency injection architectures, create custom middleware for logging and rate limiting, and run Celery background task queues.\nLearning Outcomes: Implement OAuth2 authentication flows, Build async database endpoints with SQLAlchemy, Use dependency injection and middleware patterns\nPrerequisites: CS-PY-101, CS-DB-101, CS-FAST-101",
     "metadata": {
       "course_id": "CS-FAST-201",
       "category": "Backend",
@@ -220,7 +220,7 @@
     }
   },
   {
-    "page_content": "Title: AWS Cloud Fundamentals. Description: An introductory course to the Amazon Web Services ecosystem covering the most critical services for backend and infrastructure engineers. Students deploy compute instances on EC2, manage object storage with S3 and lifecycle policies, configure RDS for managed relational databases, define access control through IAM roles and policies, and build event-driven workflows with AWS Lambda.. Outcomes: Deploy and configure EC2 instances, Manage storage with S3 and IAM policies, Build serverless functions with AWS Lambda",
+    "page_content": "Course Title: AWS Cloud Fundamentals\nCategory: Cloud\nDescription: An introductory course to the Amazon Web Services ecosystem covering the most critical services for backend and infrastructure engineers. Students deploy compute instances on EC2, manage object storage with S3 and lifecycle policies, configure RDS for managed relational databases, define access control through IAM roles and policies, and build event-driven workflows with AWS Lambda.\nLearning Outcomes: Deploy and configure EC2 instances, Manage storage with S3 and IAM policies, Build serverless functions with AWS Lambda\nPrerequisites: None",
     "metadata": {
       "course_id": "CS-CLOUD-201",
       "category": "Cloud",
@@ -238,7 +238,7 @@
     }
   },
   {
-    "page_content": "Title: Cloud Architecture & Microservices on AWS. Description: A senior-level course on designing and deploying cloud-native, microservices-based architectures on AWS. Students decompose monolithic applications into independently deployable services, implement asynchronous communication using SQS queues and SNS fan-out topics, build and secure public APIs with API Gateway, provision reproducible infrastructure using Terraform, and apply the AWS Well-Architected Framework pillars for reliability and cost optimization.. Outcomes: Design event-driven microservices with SQS and SNS, Build and deploy APIs with API Gateway, Provision infrastructure using Terraform",
+    "page_content": "Course Title: Cloud Architecture & Microservices on AWS\nCategory: Cloud\nDescription: A senior-level course on designing and deploying cloud-native, microservices-based architectures on AWS. Students decompose monolithic applications into independently deployable services, implement asynchronous communication using SQS queues and SNS fan-out topics, build and secure public APIs with API Gateway, provision reproducible infrastructure using Terraform, and apply the AWS Well-Architected Framework pillars for reliability and cost optimization.\nLearning Outcomes: Design event-driven microservices with SQS and SNS, Build and deploy APIs with API Gateway, Provision infrastructure using Terraform\nPrerequisites: CS-CLOUD-201, CS-DOCKER-101",
     "metadata": {
       "course_id": "CS-CLOUD-301",
       "category": "Cloud",
@@ -258,7 +258,7 @@
     }
   },
   {
-    "page_content": "Title: Full Stack Development with Next.js. Description: A production-grade full stack course using Next.js 14 with the App Router. Students implement Server-Side Rendering, Static Site Generation, and Incremental Static Regeneration for optimal performance, build type-safe API routes and server actions, integrate Prisma ORM for database access, configure middleware for authentication with NextAuth.js, and deploy globally optimized applications on Vercel.. Outcomes: Implement SSR and SSG rendering strategies, Build API routes and middleware in Next.js, Deploy and optimize full stack apps on Vercel",
+    "page_content": "Course Title: Full Stack Development with Next.js\nCategory: Web Development\nDescription: A production-grade full stack course using Next.js 14 with the App Router. Students implement Server-Side Rendering, Static Site Generation, and Incremental Static Regeneration for optimal performance, build type-safe API routes and server actions, integrate Prisma ORM for database access, configure middleware for authentication with NextAuth.js, and deploy globally optimized applications on Vercel.\nLearning Outcomes: Implement SSR and SSG rendering strategies, Build API routes and middleware in Next.js, Deploy and optimize full stack apps on Vercel\nPrerequisites: CS-WEB-201, CS-FAST-101",
     "metadata": {
       "course_id": "CS-WEB-301",
       "category": "Web Development",
@@ -278,7 +278,7 @@
     }
   },
   {
-    "page_content": "Title: Git & Version Control for Teams. Description: A practical course on collaborative version control using Git. Covers branching strategies including Git Flow and trunk-based development, interactive rebasing, cherry-picking, resolving complex merge conflicts, and establishing pull request review standards that improve team velocity and code quality.. Outcomes: Apply Git Flow and trunk-based development, Resolve merge conflicts confidently, Write meaningful commit messages and PRs",
+    "page_content": "Course Title: Git & Version Control for Teams\nCategory: Software Engineering\nDescription: A practical course on collaborative version control using Git. Covers branching strategies including Git Flow and trunk-based development, interactive rebasing, cherry-picking, resolving complex merge conflicts, and establishing pull request review standards that improve team velocity and code quality.\nLearning Outcomes: Apply Git Flow and trunk-based development, Resolve merge conflicts confidently, Write meaningful commit messages and PRs\nPrerequisites: None",
     "metadata": {
       "course_id": "CS-GIT-101",
       "category": "Software Engineering",
@@ -294,7 +294,7 @@
     }
   },
   {
-    "page_content": "Title: Kubernetes \u2014 Container Orchestration at Scale. Description: A comprehensive course on running containerized workloads in production with Kubernetes. Students deploy stateless and stateful applications using Deployments and StatefulSets, expose services through ClusterIP, NodePort, and Ingress controllers, manage configuration and secrets with ConfigMaps and Secrets, autoscale workloads with HPA, and package applications for repeatable releases using Helm charts.. Outcomes: Deploy applications using Deployments and StatefulSets, Configure Services, Ingress, and ConfigMaps, Manage releases with Helm charts",
+    "page_content": "Course Title: Kubernetes \u2014 Container Orchestration at Scale\nCategory: DevOps\nDescription: A comprehensive course on running containerized workloads in production with Kubernetes. Students deploy stateless and stateful applications using Deployments and StatefulSets, expose services through ClusterIP, NodePort, and Ingress controllers, manage configuration and secrets with ConfigMaps and Secrets, autoscale workloads with HPA, and package applications for repeatable releases using Helm charts.\nLearning Outcomes: Deploy applications using Deployments and StatefulSets, Configure Services, Ingress, and ConfigMaps, Manage releases with Helm charts\nPrerequisites: CS-DOCKER-101, CS-CICD-201",
     "metadata": {
       "course_id": "CS-K8S-301",
       "category": "DevOps",
@@ -314,7 +314,7 @@
     }
   },
   {
-    "page_content": "Title: Python Programming Fundamentals. Description: A comprehensive introduction to Python covering primitive and complex data types, control flow structures, function design, object-oriented programming principles, exception handling, and file I/O. Students build a strong syntactic and conceptual foundation before moving to applied domains.. Outcomes: Write clean Python functions and classes, Understand list, dict, and set operations, Handle exceptions and file I/O",
+    "page_content": "Course Title: Python Programming Fundamentals\nCategory: Programming\nDescription: A comprehensive introduction to Python covering primitive and complex data types, control flow structures, function design, object-oriented programming principles, exception handling, and file I/O. Students build a strong syntactic and conceptual foundation before moving to applied domains.\nLearning Outcomes: Write clean Python functions and classes, Understand list, dict, and set operations, Handle exceptions and file I/O\nPrerequisites: None",
     "metadata": {
       "course_id": "CS-PY-101",
       "category": "Programming",
@@ -329,7 +329,7 @@
     }
   },
   {
-    "page_content": "Title: LLM Fine-Tuning with LoRA & PEFT. Description: An advanced course on adapting pre-trained large language models for domain-specific tasks using parameter-efficient methods. Students curate and format instruction-tuning datasets in Alpaca and ChatML formats, apply Low-Rank Adaptation (LoRA) and Quantized LoRA (QLoRA) using the Hugging Face PEFT and TRL libraries, configure SFTTrainer for supervised fine-tuning, and rigorously evaluate adapted models using ROUGE scores, perplexity, and human preference benchmarks.. Outcomes: Prepare and format instruction-tuning datasets, Fine-tune LLMs using LoRA with Hugging Face, Evaluate fine-tuned models with ROUGE and perplexity",
+    "page_content": "Course Title: LLM Fine-Tuning with LoRA & PEFT\nCategory: AI Engineering\nDescription: An advanced course on adapting pre-trained large language models for domain-specific tasks using parameter-efficient methods. Students curate and format instruction-tuning datasets in Alpaca and ChatML formats, apply Low-Rank Adaptation (LoRA) and Quantized LoRA (QLoRA) using the Hugging Face PEFT and TRL libraries, configure SFTTrainer for supervised fine-tuning, and rigorously evaluate adapted models using ROUGE scores, perplexity, and human preference benchmarks.\nLearning Outcomes: Prepare and format instruction-tuning datasets, Fine-tune LLMs using LoRA with Hugging Face, Evaluate fine-tuned models with ROUGE and perplexity\nPrerequisites: CS-DL-201, CS-LLM-201",
     "metadata": {
       "course_id": "CS-FINETUNE-301",
       "category": "AI Engineering",
@@ -349,7 +349,7 @@
     }
   },
   {
-    "page_content": "Title: REST API Development with FastAPI. Description: A project-driven course for building production-quality REST APIs with Python's FastAPI framework. Students learn to define typed routes with path and query parameters, leverage Pydantic models for automatic request validation and serialization, implement dependency injection, and secure endpoints using JWT-based Bearer token authentication.. Outcomes: Create REST endpoints with path and query params, Validate request/response with Pydantic models, Implement JWT-based authentication",
+    "page_content": "Course Title: REST API Development with FastAPI\nCategory: Backend\nDescription: A project-driven course for building production-quality REST APIs with Python's FastAPI framework. Students learn to define typed routes with path and query parameters, leverage Pydantic models for automatic request validation and serialization, implement dependency injection, and secure endpoints using JWT-based Bearer token authentication.\nLearning Outcomes: Create REST endpoints with path and query params, Validate request/response with Pydantic models, Implement JWT-based authentication\nPrerequisites: CS-PY-101",
     "metadata": {
       "course_id": "CS-FAST-101",
       "category": "Backend",
@@ -367,7 +367,7 @@
     }
   },
   {
-    "page_content": "Title: Deep Learning with PyTorch. Description: A rigorous course in deep learning using the PyTorch framework. Students implement feedforward networks, convolutional neural networks for image classification, recurrent architectures for sequence modeling, and learn to write efficient custom training loops with GPU acceleration. Covers batch normalization, dropout regularization, and learning rate scheduling for model optimization.. Outcomes: Build custom neural networks with nn.Module, Train CNNs on image classification tasks, Optimize models with learning rate schedulers",
+    "page_content": "Course Title: Deep Learning with PyTorch\nCategory: Machine Learning\nDescription: A rigorous course in deep learning using the PyTorch framework. Students implement feedforward networks, convolutional neural networks for image classification, recurrent architectures for sequence modeling, and learn to write efficient custom training loops with GPU acceleration. Covers batch normalization, dropout regularization, and learning rate scheduling for model optimization.\nLearning Outcomes: Build custom neural networks with nn.Module, Train CNNs on image classification tasks, Optimize models with learning rate schedulers\nPrerequisites: CS-ML-101",
     "metadata": {
       "course_id": "CS-DL-201",
       "category": "Machine Learning",
@@ -386,7 +386,7 @@
     }
   },
   {
-    "page_content": "Title: SQL Fundamentals for Backend Developers. Description: A hands-on introduction to relational database theory and practice using SQLite and PostgreSQL. Students learn to model data with schemas, enforce referential integrity through primary and foreign keys, and interact with data using full CRUD operations and multi-table JOINs.. Outcomes: Write basic SELECT queries with filters, Understand Primary and Foreign Keys, Perform data insertion, updates, and deletions",
+    "page_content": "Course Title: SQL Fundamentals for Backend Developers\nCategory: Database\nDescription: A hands-on introduction to relational database theory and practice using SQLite and PostgreSQL. Students learn to model data with schemas, enforce referential integrity through primary and foreign keys, and interact with data using full CRUD operations and multi-table JOINs.\nLearning Outcomes: Write basic SELECT queries with filters, Understand Primary and Foreign Keys, Perform data insertion, updates, and deletions\nPrerequisites: None",
     "metadata": {
       "course_id": "CS-DB-101",
       "category": "Database",
@@ -402,7 +402,7 @@
     }
   },
   {
-    "page_content": "Title: Web Application Security & OWASP Top 10. Description: A practical security course structured around the OWASP Top 10 most critical web application risks. Students perform hands-on exploitation of SQL injection, reflected and stored XSS, CSRF, broken access control, and insecure deserialization vulnerabilities in sandboxed environments, then implement the corresponding mitigations in Python and JavaScript web applications.. Outcomes: Exploit and patch SQL injection vulnerabilities, Prevent XSS and CSRF attacks in web apps, Implement secure authentication and session management",
+    "page_content": "Course Title: Web Application Security & OWASP Top 10\nCategory: Cybersecurity\nDescription: A practical security course structured around the OWASP Top 10 most critical web application risks. Students perform hands-on exploitation of SQL injection, reflected and stored XSS, CSRF, broken access control, and insecure deserialization vulnerabilities in sandboxed environments, then implement the corresponding mitigations in Python and JavaScript web applications.\nLearning Outcomes: Exploit and patch SQL injection vulnerabilities, Prevent XSS and CSRF attacks in web apps, Implement secure authentication and session management\nPrerequisites: CS-SEC-101, CS-WEB-101",
     "metadata": {
       "course_id": "CS-SEC-201",
       "category": "Cybersecurity",
@@ -422,7 +422,7 @@
     }
   },
   {
-    "page_content": "Title: NLP with Hugging Face Transformers. Description: An applied NLP course using the Hugging Face Transformers library and Datasets ecosystem. Students tokenize and preprocess text corpora, fine-tune pre-trained BERT and RoBERTa models for sequence classification and named entity recognition tasks, apply parameter-efficient techniques, and rigorously evaluate model quality using F1-score, precision, recall, and confusion analysis.. Outcomes: Tokenize and preprocess text with Hugging Face, Fine-tune BERT for classification and NER tasks, Evaluate NLP models with F1, precision, and recall",
+    "page_content": "Course Title: NLP with Hugging Face Transformers\nCategory: Machine Learning\nDescription: An applied NLP course using the Hugging Face Transformers library and Datasets ecosystem. Students tokenize and preprocess text corpora, fine-tune pre-trained BERT and RoBERTa models for sequence classification and named entity recognition tasks, apply parameter-efficient techniques, and rigorously evaluate model quality using F1-score, precision, recall, and confusion analysis.\nLearning Outcomes: Tokenize and preprocess text with Hugging Face, Fine-tune BERT for classification and NER tasks, Evaluate NLP models with F1, precision, and recall\nPrerequisites: CS-DL-201",
     "metadata": {
       "course_id": "CS-NLP-201",
       "category": "Machine Learning",
@@ -441,7 +441,7 @@
     }
   },
   {
-    "page_content": "Title: Advanced SQL \u2014 Indexing, Transactions & Query Optimization. Description: A deep dive into production-grade SQL performance and reliability. Students master analytical window functions, Common Table Expressions (CTEs), query execution plan analysis using EXPLAIN/ANALYZE, B-tree and partial index strategies, and ACID-compliant transaction management including deadlock detection and prevention.. Outcomes: Use window functions and CTEs, Analyze and optimize slow queries with EXPLAIN, Manage ACID transactions and deadlock prevention",
+    "page_content": "Course Title: Advanced SQL \u2014 Indexing, Transactions & Query Optimization\nCategory: Database\nDescription: A deep dive into production-grade SQL performance and reliability. Students master analytical window functions, Common Table Expressions (CTEs), query execution plan analysis using EXPLAIN/ANALYZE, B-tree and partial index strategies, and ACID-compliant transaction management including deadlock detection and prevention.\nLearning Outcomes: Use window functions and CTEs, Analyze and optimize slow queries with EXPLAIN, Manage ACID transactions and deadlock prevention\nPrerequisites: CS-DB-101",
     "metadata": {
       "course_id": "CS-DB-201",
       "category": "Database",
@@ -459,7 +459,7 @@
     }
   },
   {
-    "page_content": "Title: System Design for Engineers. Description: A senior engineer's course on designing large-scale distributed systems with an emphasis on real interview and production scenarios. Students apply horizontal and vertical scaling principles, implement multi-tier caching strategies with Redis and CDN edge networks, design database sharding and replication topologies, analyze trade-offs using the CAP theorem and eventual consistency models, and architect well-known systems including URL shorteners, distributed message queues, and social media feed algorithms.. Outcomes: Design systems for horizontal and vertical scaling, Apply caching strategies with Redis and CDN, Architect URL shorteners, chat systems, and feed algorithms",
+    "page_content": "Course Title: System Design for Engineers\nCategory: System Design\nDescription: A senior engineer's course on designing large-scale distributed systems with an emphasis on real interview and production scenarios. Students apply horizontal and vertical scaling principles, implement multi-tier caching strategies with Redis and CDN edge networks, design database sharding and replication topologies, analyze trade-offs using the CAP theorem and eventual consistency models, and architect well-known systems including URL shorteners, distributed message queues, and social media feed algorithms.\nLearning Outcomes: Design systems for horizontal and vertical scaling, Apply caching strategies with Redis and CDN, Architect URL shorteners, chat systems, and feed algorithms\nPrerequisites: CS-DB-201, CS-CLOUD-201",
     "metadata": {
       "course_id": "CS-SYSDESIGN-301",
       "category": "System Design",
@@ -479,7 +479,7 @@
     }
   },
   {
-    "page_content": "Title: NoSQL Databases \u2014 MongoDB & Redis. Description: Practical training in document and key-value store paradigms for modern applications. Covers MongoDB schema design, flexible document modeling, the aggregation pipeline for complex data transformations, and Redis as both a high-speed caching layer and a pub/sub message broker with TTL-based eviction strategies.. Outcomes: Design document schemas in MongoDB, Build aggregation pipelines, Implement caching with Redis TTL strategies",
+    "page_content": "Course Title: NoSQL Databases \u2014 MongoDB & Redis\nCategory: Database\nDescription: Practical training in document and key-value store paradigms for modern applications. Covers MongoDB schema design, flexible document modeling, the aggregation pipeline for complex data transformations, and Redis as both a high-speed caching layer and a pub/sub message broker with TTL-based eviction strategies.\nLearning Outcomes: Design document schemas in MongoDB, Build aggregation pipelines, Implement caching with Redis TTL strategies\nPrerequisites: CS-DB-101",
     "metadata": {
       "course_id": "CS-DB-301",
       "category": "Database",
@@ -497,7 +497,7 @@
     }
   },
   {
-    "page_content": "Title: MLOps \u2014 Model Deployment & Monitoring. Description: An end-to-end MLOps course covering the full lifecycle of production machine learning systems. Students track experiments and version datasets and models using MLflow, build model serving APIs with FastAPI, containerize inference services with Docker, set up automated retraining pipelines triggered by data drift detection using Evidently AI, and monitor prediction quality and infrastructure health with Grafana dashboards.. Outcomes: Track experiments and version models with MLflow, Serve ML models via FastAPI and Docker, Monitor model drift and set up retraining triggers",
+    "page_content": "Course Title: MLOps \u2014 Model Deployment & Monitoring\nCategory: AI Engineering\nDescription: An end-to-end MLOps course covering the full lifecycle of production machine learning systems. Students track experiments and version datasets and models using MLflow, build model serving APIs with FastAPI, containerize inference services with Docker, set up automated retraining pipelines triggered by data drift detection using Evidently AI, and monitor prediction quality and infrastructure health with Grafana dashboards.\nLearning Outcomes: Track experiments and version models with MLflow, Serve ML models via FastAPI and Docker, Monitor model drift and set up retraining triggers\nPrerequisites: CS-ML-101, CS-DOCKER-101, CS-FAST-101",
     "metadata": {
       "course_id": "CS-MLOPS-301",
       "category": "AI Engineering",
@@ -518,7 +518,7 @@
     }
   },
   {
-    "page_content": "Title: API Security \u2014 JWT, OAuth2 & Rate Limiting. Description: A specialized course on hardening APIs against modern attack surfaces. Students implement the full OAuth2 authorization code flow with PKCE and the client credentials flow for machine-to-machine authentication, secure JWTs against algorithm confusion, token hijacking, and replay attacks, enforce API key rotation policies, and apply sliding window and token bucket rate limiting strategies using Redis to protect against abuse and DDoS.. Outcomes: Implement OAuth2 authorization code and client credentials flows, Secure APIs against token hijacking and replay attacks, Apply rate limiting and throttling strategies",
+    "page_content": "Course Title: API Security \u2014 JWT, OAuth2 & Rate Limiting\nCategory: Cybersecurity\nDescription: A specialized course on hardening APIs against modern attack surfaces. Students implement the full OAuth2 authorization code flow with PKCE and the client credentials flow for machine-to-machine authentication, secure JWTs against algorithm confusion, token hijacking, and replay attacks, enforce API key rotation policies, and apply sliding window and token bucket rate limiting strategies using Redis to protect against abuse and DDoS.\nLearning Outcomes: Implement OAuth2 authorization code and client credentials flows, Secure APIs against token hijacking and replay attacks, Apply rate limiting and throttling strategies\nPrerequisites: CS-SEC-201, CS-FAST-101",
     "metadata": {
       "course_id": "CS-WEBSEC-401",
       "category": "Cybersecurity",
@@ -538,7 +538,7 @@
     }
   },
   {
-    "page_content": "Title: Linux & Shell Scripting for Developers. Description: Practical Linux proficiency for software developers working in Unix-like environments. Covers the filesystem hierarchy, file permissions and ownership models, user and group management, process monitoring with ps/top/htop, cron job scheduling, and writing production-ready bash scripts for automation and deployment tasks.. Outcomes: Navigate and manage the Linux file system, Write bash scripts for automation, Manage processes, cron jobs, and system services",
+    "page_content": "Course Title: Linux & Shell Scripting for Developers\nCategory: DevOps\nDescription: Practical Linux proficiency for software developers working in Unix-like environments. Covers the filesystem hierarchy, file permissions and ownership models, user and group management, process monitoring with ps/top/htop, cron job scheduling, and writing production-ready bash scripts for automation and deployment tasks.\nLearning Outcomes: Navigate and manage the Linux file system, Write bash scripts for automation, Manage processes, cron jobs, and system services\nPrerequisites: None",
     "metadata": {
       "course_id": "CS-LINUX-101",
       "category": "DevOps",
@@ -555,7 +555,7 @@
     }
   },
   {
-    "page_content": "Title: RAG Pipeline Design & Vector Databases. Description: A production-focused course on Retrieval-Augmented Generation systems. Students design document ingestion pipelines with chunking strategies (fixed-size, semantic, recursive), generate and store embeddings in Pinecone, implement hybrid retrieval combining dense vector search with BM25 sparse search, apply Cohere re-ranking for precision improvement, and evaluate end-to-end RAG quality using RAGAS metrics.. Outcomes: Build end-to-end RAG pipelines with Pinecone, Apply hybrid search \u2014 dense + sparse retrieval, Evaluate RAG quality with precision and recall metrics",
+    "page_content": "Course Title: RAG Pipeline Design & Vector Databases\nCategory: AI Engineering\nDescription: A production-focused course on Retrieval-Augmented Generation systems. Students design document ingestion pipelines with chunking strategies (fixed-size, semantic, recursive), generate and store embeddings in Pinecone, implement hybrid retrieval combining dense vector search with BM25 sparse search, apply Cohere re-ranking for precision improvement, and evaluate end-to-end RAG quality using RAGAS metrics.\nLearning Outcomes: Build end-to-end RAG pipelines with Pinecone, Apply hybrid search \u2014 dense + sparse retrieval, Evaluate RAG quality with precision and recall metrics\nPrerequisites: CS-LLM-201",
     "metadata": {
       "course_id": "CS-RAG-201",
       "category": "AI Engineering",
@@ -574,7 +574,7 @@
     }
   },
   {
-    "page_content": "Title: Advanced Python \u2014 Async, Decorators & Design Patterns. Description: An in-depth exploration of Python internals and professional engineering patterns. Covers the asyncio event loop, coroutine scheduling, context managers, metaclass programming, and the practical application of Gang-of-Four design patterns such as Factory, Singleton, and Observer in real-world codebases.. Outcomes: Write async/await coroutines, Build custom decorators and context managers, Apply Factory, Singleton, and Observer patterns",
+    "page_content": "Course Title: Advanced Python \u2014 Async, Decorators & Design Patterns\nCategory: Programming\nDescription: An in-depth exploration of Python internals and professional engineering patterns. Covers the asyncio event loop, coroutine scheduling, context managers, metaclass programming, and the practical application of Gang-of-Four design patterns such as Factory, Singleton, and Observer in real-world codebases.\nLearning Outcomes: Write async/await coroutines, Build custom decorators and context managers, Apply Factory, Singleton, and Observer patterns\nPrerequisites: CS-PY-101",
     "metadata": {
       "course_id": "CS-PY-201",
       "category": "Programming",
@@ -591,7 +591,7 @@
     }
   },
   {
-    "page_content": "Title: Cybersecurity Fundamentals. Description: A foundational survey of cybersecurity principles designed for developers and engineers. Introduces the CIA triad (Confidentiality, Integrity, Availability), threat modeling, common attack vectors including phishing, man-in-the-middle, and denial-of-service attacks, and practical defensive practices such as least-privilege access and patch management.. Outcomes: Understand confidentiality, integrity, and availability, Identify common threats \u2014 phishing, MITM, DoS, Apply basic security hygiene and password policies",
+    "page_content": "Course Title: Cybersecurity Fundamentals\nCategory: Cybersecurity\nDescription: A foundational survey of cybersecurity principles designed for developers and engineers. Introduces the CIA triad (Confidentiality, Integrity, Availability), threat modeling, common attack vectors including phishing, man-in-the-middle, and denial-of-service attacks, and practical defensive practices such as least-privilege access and patch management.\nLearning Outcomes: Understand confidentiality, integrity, and availability, Identify common threats \u2014 phishing, MITM, DoS, Apply basic security hygiene and password policies\nPrerequisites: None",
     "metadata": {
       "course_id": "CS-SEC-101",
       "category": "Cybersecurity",
@@ -607,22 +607,7 @@
     }
   },
   {
-    "page_content": "Title: Kubernetes for AI Workloads. Description: An introduction to K8s specifically for ML engineers. Covers pod orchestration, GPU resource allocation, and scaling FastAPI backends on clusters.. Outcomes: Deploy ML models as K8s services, Configure GPU-enabled worker nodes, Manage cluster auto-scaling for inference bursts",
-    "metadata": {
-      "course_id": "OPS-K8S-101",
-      "category": "MLOps",
-      "level": "intermediate",
-      "prerequisites": [],
-      "duration": 10,
-      "tags": [
-        "Kubernetes",
-        "DevOps",
-        "Scaling"
-      ]
-    }
-  },
-  {
-    "page_content": "Title: High-Performance Serving with Triton. Description: Using NVIDIA Triton to serve models from multiple frameworks (PyTorch, TensorFlow, ONNX). Covers model ensemble pipelines and dynamic batching for sub-100ms latency.. Outcomes: Configure Triton Model Repository, Implement dynamic batching for high throughput, Optimize model performance with TensorRT",
+    "page_content": "Course Title: High-Performance Serving with Triton\nCategory: MLOps\nDescription: Using NVIDIA Triton to serve models from multiple frameworks (PyTorch, TensorFlow, ONNX). Covers model ensemble pipelines and dynamic batching for sub-100ms latency.\nLearning Outcomes: Configure Triton Model Repository, Implement dynamic batching for high throughput, Optimize model performance with TensorRT\nPrerequisites: OPS-K8S-101",
     "metadata": {
       "course_id": "OPS-TRITON-201",
       "category": "MLOps",
@@ -640,7 +625,7 @@
     }
   },
   {
-    "page_content": "Title: LLM Red Teaming & Guardrails. Description: Deep dive into LLM vulnerabilities. Learn to simulate prompt injections, implement Lakera/NeMo Guardrails, and secure RAG retrieval from data leakage.. Outcomes: Perform adversarial 'red teaming' on LLM prompts, Implement real-time injection detection layers, Secure vector retrieval pipelines from PII leakage",
+    "page_content": "Course Title: LLM Red Teaming & Guardrails\nCategory: AI Security\nDescription: Deep dive into LLM vulnerabilities. Learn to simulate prompt injections, implement Lakera/NeMo Guardrails, and secure RAG retrieval from data leakage.\nLearning Outcomes: Perform adversarial 'red teaming' on LLM prompts, Implement real-time injection detection layers, Secure vector retrieval pipelines from PII leakage\nPrerequisites: None",
     "metadata": {
       "course_id": "SEC-LLM-301",
       "category": "AI Security",
@@ -655,7 +640,7 @@
     }
   },
   {
-    "page_content": "Title: Billion-Scale Vector Ops. Description: Scaling beyond managed services. Managing Milvus clusters, fine-tuning HNSW parameters, and partitioning massive datasets for distributed search.. Outcomes: Architect distributed Milvus clusters, Tune index performance for billion-scale search, Implement complex metadata filtering at scale",
+    "page_content": "Course Title: Billion-Scale Vector Ops\nCategory: Data Engineering\nDescription: Scaling beyond managed services. Managing Milvus clusters, fine-tuning HNSW parameters, and partitioning massive datasets for distributed search.\nLearning Outcomes: Architect distributed Milvus clusters, Tune index performance for billion-scale search, Implement complex metadata filtering at scale\nPrerequisites: OPS-K8S-101",
     "metadata": {
       "course_id": "DTA-MIL-401",
       "category": "Data Engineering",
@@ -672,7 +657,7 @@
     }
   },
   {
-    "page_content": "Title: Enterprise Health Record Admin. Description: Introduction to the administrative side of Epic and Cerner. Covers patient population mapping, digital referral tracking, and cross-departmental data integration.. Outcomes: Navigate enterprise EHR interfaces, Audit digital clinical documentation for compliance, Manage HIPAA-secure data transfers",
+    "page_content": "Course Title: Enterprise Health Record Admin\nCategory: Health Informatics\nDescription: Introduction to the administrative side of Epic and Cerner. Covers patient population mapping, digital referral tracking, and cross-departmental data integration.\nLearning Outcomes: Navigate enterprise EHR interfaces, Audit digital clinical documentation for compliance, Manage HIPAA-secure data transfers\nPrerequisites: None",
     "metadata": {
       "course_id": "HC-EHR-101",
       "category": "Health Informatics",
@@ -688,7 +673,7 @@
     }
   },
   {
-    "page_content": "Title: Utilization Management & InterQual. Description: Deep dive into InterQual clinical criteria. Learn how to determine medical necessity for inpatient, observation, and outpatient services to ensure insurance and federal reimbursement.. Outcomes: Apply InterQual criteria to clinical scenarios, Determine appropriate level of care, Manage clinical appeals and denials",
+    "page_content": "Course Title: Utilization Management & InterQual\nCategory: Compliance\nDescription: Deep dive into InterQual clinical criteria. Learn how to determine medical necessity for inpatient, observation, and outpatient services to ensure insurance and federal reimbursement.\nLearning Outcomes: Apply InterQual criteria to clinical scenarios, Determine appropriate level of care, Manage clinical appeals and denials\nPrerequisites: HC-EHR-101",
     "metadata": {
       "course_id": "HC-UM-201",
       "category": "Compliance",
@@ -706,7 +691,7 @@
     }
   },
   {
-    "page_content": "Title: Clinical Analytics & Power BI. Description: Converting case notes into data. Learn to build Power BI dashboards that track patient 'Self-Sufficiency' scores, discharge timelines, and program cost-efficiency.. Outcomes: Connect clinical databases to Power BI, Design interactive patient outcome dashboards, Predict patient readmission risks via data trends",
+    "page_content": "Course Title: Clinical Analytics & Power BI\nCategory: Data Science\nDescription: Converting case notes into data. Learn to build Power BI dashboards that track patient 'Self-Sufficiency' scores, discharge timelines, and program cost-efficiency.\nLearning Outcomes: Connect clinical databases to Power BI, Design interactive patient outcome dashboards, Predict patient readmission risks via data trends\nPrerequisites: None",
     "metadata": {
       "course_id": "HC-DTA-301",
       "category": "Data Science",
@@ -722,7 +707,7 @@
     }
   },
   {
-    "page_content": "Title: Mental Health Informatics Foundations. Description: The transition from clinical notes to structured data. Learn to manage HIPAA-compliant databases and move from 'observational' reporting to 'analytical' population health tracking.. Outcomes: Structure clinical counseling data for HIPAA-compliant analysis, Navigate Digital Mental Health Records (DMHR), Interpret large-scale behavioral health datasets",
+    "page_content": "Course Title: Mental Health Informatics Foundations\nCategory: Health Informatics\nDescription: The transition from clinical notes to structured data. Learn to manage HIPAA-compliant databases and move from 'observational' reporting to 'analytical' population health tracking.\nLearning Outcomes: Structure clinical counseling data for HIPAA-compliant analysis, Navigate Digital Mental Health Records (DMHR), Interpret large-scale behavioral health datasets\nPrerequisites: None",
     "metadata": {
       "course_id": "EDU-INF-101",
       "category": "Health Informatics",
@@ -738,7 +723,7 @@
     }
   },
   {
-    "page_content": "Title: AI in Clinical Crisis Detection. Description: Utilizing Natural Language Processing (NLP) and sentiment analysis to identify risk markers in counseling logs and digital communications for proactive intervention.. Outcomes: Understand NLP markers for suicidal ideation and burnout, Configure AI alerts for crisis team activation, Audit AI outputs for clinical accuracy and bias",
+    "page_content": "Course Title: AI in Clinical Crisis Detection\nCategory: Clinical AI\nDescription: Utilizing Natural Language Processing (NLP) and sentiment analysis to identify risk markers in counseling logs and digital communications for proactive intervention.\nLearning Outcomes: Understand NLP markers for suicidal ideation and burnout, Configure AI alerts for crisis team activation, Audit AI outputs for clinical accuracy and bias\nPrerequisites: EDU-INF-101",
     "metadata": {
       "course_id": "EDU-AI-201",
       "category": "Clinical AI",
@@ -756,7 +741,7 @@
     }
   },
   {
-    "page_content": "Title: Digital EAP Ecosystem Management. Description: Mastering the administration of platforms like Lyra and Spring Health. Learn to deploy automated triage, manage global provider networks, and track employee wellness ROI.. Outcomes: Administer enterprise-scale mental health platforms, Set up automated clinical triage workflows, Measure and report on the ROI of digital wellness programs",
+    "page_content": "Course Title: Digital EAP Ecosystem Management\nCategory: Enterprise Wellness\nDescription: Mastering the administration of platforms like Lyra and Spring Health. Learn to deploy automated triage, manage global provider networks, and track employee wellness ROI.\nLearning Outcomes: Administer enterprise-scale mental health platforms, Set up automated clinical triage workflows, Measure and report on the ROI of digital wellness programs\nPrerequisites: EDU-INF-101",
     "metadata": {
       "course_id": "EDU-PLAT-301",
       "category": "Enterprise Wellness",
@@ -774,7 +759,7 @@
     }
   },
   {
-    "page_content": "Title: Kubernetes for AI Workloads. Description: An introduction to K8s specifically for ML engineers. Covers pod orchestration, GPU resource allocation, and scaling FastAPI backends on clusters.. Outcomes: Deploy ML models as K8s services, Configure GPU-enabled worker nodes, Manage cluster auto-scaling for inference bursts",
+    "page_content": "Course Title: Kubernetes for AI Workloads\nCategory: MLOps\nDescription: An introduction to K8s specifically for ML engineers. Covers pod orchestration, GPU resource allocation, and scaling FastAPI backends on clusters.\nLearning Outcomes: Deploy ML models as K8s services, Configure GPU-enabled worker nodes, Manage cluster auto-scaling for inference bursts\nPrerequisites: None",
     "metadata": {
       "course_id": "OPS-K8S-101",
       "category": "MLOps",
@@ -789,7 +774,7 @@
     }
   },
   {
-    "page_content": "Title: High-Performance Serving with Triton. Description: Using NVIDIA Triton to serve models from multiple frameworks (PyTorch, TensorFlow, ONNX). Covers model ensemble pipelines and dynamic batching for sub-100ms latency.. Outcomes: Configure Triton Model Repository, Implement dynamic batching for high throughput, Optimize model performance with TensorRT",
+    "page_content": "Course Title: High-Performance Serving with Triton\nCategory: MLOps\nDescription: Using NVIDIA Triton to serve models from multiple frameworks (PyTorch, TensorFlow, ONNX). Covers model ensemble pipelines and dynamic batching for sub-100ms latency.\nLearning Outcomes: Configure Triton Model Repository, Implement dynamic batching for high throughput, Optimize model performance with TensorRT\nPrerequisites: OPS-K8S-101",
     "metadata": {
       "course_id": "OPS-TRITON-201",
       "category": "MLOps",
@@ -807,7 +792,7 @@
     }
   },
   {
-    "page_content": "Title: LLM Red Teaming & Guardrails. Description: Deep dive into LLM vulnerabilities. Learn to simulate prompt injections, implement Lakera/NeMo Guardrails, and secure RAG retrieval from data leakage.. Outcomes: Perform adversarial 'red teaming' on LLM prompts, Implement real-time injection detection layers, Secure vector retrieval pipelines from PII leakage",
+    "page_content": "Course Title: LLM Red Teaming & Guardrails\nCategory: AI Security\nDescription: Deep dive into LLM vulnerabilities. Learn to simulate prompt injections, implement Lakera/NeMo Guardrails, and secure RAG retrieval from data leakage.\nLearning Outcomes: Perform adversarial 'red teaming' on LLM prompts, Implement real-time injection detection layers, Secure vector retrieval pipelines from PII leakage\nPrerequisites: None",
     "metadata": {
       "course_id": "SEC-LLM-301",
       "category": "AI Security",
@@ -822,7 +807,7 @@
     }
   },
   {
-    "page_content": "Title: Billion-Scale Vector Ops. Description: Scaling beyond managed services. Managing Milvus clusters, fine-tuning HNSW parameters, and partitioning massive datasets for distributed search.. Outcomes: Architect distributed Milvus clusters, Tune index performance for billion-scale search, Implement complex metadata filtering at scale",
+    "page_content": "Course Title: Billion-Scale Vector Ops\nCategory: Data Engineering\nDescription: Scaling beyond managed services. Managing Milvus clusters, fine-tuning HNSW parameters, and partitioning massive datasets for distributed search.\nLearning Outcomes: Architect distributed Milvus clusters, Tune index performance for billion-scale search, Implement complex metadata filtering at scale\nPrerequisites: OPS-K8S-101",
     "metadata": {
       "course_id": "DTA-MIL-401",
       "category": "Data Engineering",
@@ -839,7 +824,7 @@
     }
   },
   {
-    "page_content": "Title: Data Fundamentals for Talent Ops. Description: Foundational course on HR metrics and data hygiene. Learn to structure talent data for analysis and move beyond simple spreadsheets.. Outcomes: Define key workforce KPIs, Structure unstructured talent data for reporting, Basics of data-driven decision making in recruitment",
+    "page_content": "Course Title: Data Fundamentals for Talent Ops\nCategory: Workforce Analytics\nDescription: Foundational course on HR metrics and data hygiene. Learn to structure talent data for analysis and move beyond simple spreadsheets.\nLearning Outcomes: Define key workforce KPIs, Structure unstructured talent data for reporting, Basics of data-driven decision making in recruitment\nPrerequisites: None",
     "metadata": {
       "course_id": "BUS-DATA-101",
       "category": "Workforce Analytics",
@@ -854,7 +839,7 @@
     }
   },
   {
-    "page_content": "Title: SQL for Workforce Analytics. Description: Learn to query internal talent databases. Covers JOINs, aggregations, and subqueries to find hiring trends and predict churn.. Outcomes: Write SQL queries to extract talent metrics, Analyze historical hiring data for trends, Build basic labor supply reports",
+    "page_content": "Course Title: SQL for Workforce Analytics\nCategory: Data Science\nDescription: Learn to query internal talent databases. Covers JOINs, aggregations, and subqueries to find hiring trends and predict churn.\nLearning Outcomes: Write SQL queries to extract talent metrics, Analyze historical hiring data for trends, Build basic labor supply reports\nPrerequisites: BUS-DATA-101",
     "metadata": {
       "course_id": "BUS-SQL-201",
       "category": "Data Science",
@@ -871,7 +856,7 @@
     }
   },
   {
-    "page_content": "Title: Mastering AI Talent Platforms. Description: Deep dive into Eightfold.ai and SeekOut. Learn to use deep-learning matching, skill-adjacency analysis, and automated sourcing bots.. Outcomes: Configure AI matching filters, Analyze talent pools for skill gaps using AI, Manage automated sourcing workflows",
+    "page_content": "Course Title: Mastering AI Talent Platforms\nCategory: Recruitment Tech\nDescription: Deep dive into Eightfold.ai and SeekOut. Learn to use deep-learning matching, skill-adjacency analysis, and automated sourcing bots.\nLearning Outcomes: Configure AI matching filters, Analyze talent pools for skill gaps using AI, Manage automated sourcing workflows\nPrerequisites: BUS-DATA-101",
     "metadata": {
       "course_id": "BUS-AI-301",
       "category": "Recruitment Tech",
@@ -888,7 +873,7 @@
     }
   },
   {
-    "page_content": "Title: Enterprise VMS Strategy. Description: Managing contingent labor at scale using SAP Fieldglass. Covers vendor optimization, bill-rate management, and compliance audits.. Outcomes: Navigate SAP Fieldglass VMS, Optimize bill-rates across global vendors, Manage contingent workforce compliance",
+    "page_content": "Course Title: Enterprise VMS Strategy\nCategory: Logistics\nDescription: Managing contingent labor at scale using SAP Fieldglass. Covers vendor optimization, bill-rate management, and compliance audits.\nLearning Outcomes: Navigate SAP Fieldglass VMS, Optimize bill-rates across global vendors, Manage contingent workforce compliance\nPrerequisites: None",
     "metadata": {
       "course_id": "BUS-VMS-401",
       "category": "Logistics",
