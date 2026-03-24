@@ -2,6 +2,10 @@ from langchain_groq import ChatGroq
 from app.schemas.pydanticschema import ResumeExtract,JobDescriptionExtract,SkillGapAnalysis
 from app.core.config import settings
 from app.tools.tools import roadmap_planner_agent_tools
+from app.prompts.roadmap_planner_agent_prompt import roadmap_planner_agent_prompt
+from typing import Any
+from langchain.agents import create_agent
+from langchain.agents.middleware import ToolCallLimitMiddleware
 import os
 
 if "GROQ_API_KEY" not in os.environ:
@@ -49,11 +53,15 @@ gap_analysis_agent=gap_analysis_agent.with_structured_output(
     strict=True
 )
 
-
-
-roadmap_planner_agent=ChatGroq(
-    model="qwen/qwen3-32b",
-    temperature=0.2,
+roadmap_planner_agent = create_agent(
+    model="qwen/qwen3-32b", 
+    tools=roadmap_planner_agent_tools,
+    system_prompt=roadmap_planner_agent_prompt,
+    middleware=[
+        ToolCallLimitMiddleware[Any, None](
+            tool_name="search_courses",
+            run_limit=4,
+            thread_limit=10,
+        )
+    ],
 )
-
-roadmap_planner_agent=roadmap_planner_agent.bind_tools(roadmap_planner_agent_tools)

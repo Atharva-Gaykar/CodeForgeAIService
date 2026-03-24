@@ -317,10 +317,12 @@ class SkillGapAnalysis(BaseModel):
     )
 
 
+
+# Schema for learning_roadmap tool
 class RoadmapStep(BaseModel):
     course_id: str
     title: str
-    reasoning: str = Field(..., description="Why this specific course was chosen for this user")
+    reasoning: str = Field(..., description="Why this specific course was chosen for this user tell in short 10-15 words strictly")
     is_foundation: bool
     sequence_order: int = Field(..., description="The order in which the course should be taken")
 
@@ -329,3 +331,11 @@ class LearningRoadmap(BaseModel):
     target_role: str
     roadmap: List[RoadmapStep]
     onboarding_summary: str
+
+
+
+
+# Schema for search_courses tool
+
+class SearchCourse(BaseModel):
+    query:str=Field(..., description="The skill to find with  semantic terms (e.g., 'FastAPI', 'PostgreSQL', 'Docker','Enterprise VMS Strategy','Utilization Management')")

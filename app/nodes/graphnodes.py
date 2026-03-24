@@ -124,24 +124,6 @@ def skill_gap_node(state: OnboardingState):
     return {"skill_gap_analysis_data": result["parsed"]}
 
 
-    
-
-def roadmap_planning_node(state: OnboardingState):
-
-    """
-    The agent's 'thinking' node. It looks at the Skill Gaps and 
-    decides which tool to call next.
-    """
-    skill_gap_data = state["skill_gap_analysis_data"]
-
-    skill_gap_data= skill_gap_data.model_dump()
-
-    system_prompt = SystemMessage(content=roadmap_planner_agent_prompt)
-    input_msg = HumanMessage(content=f"<skill_gap_data> {skill_gap_data} </skill_gap_data>")
-    
-    response = roadmap_planner_agent.invoke([system_prompt, input_msg] + state["messages"])
-    
-    return {"messages": [response]}
 
 
 def finalize_state_node(state: OnboardingState):

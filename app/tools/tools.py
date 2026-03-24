@@ -1,7 +1,7 @@
 from langchain_core.tools import tool
 from typing import Optional
 from app.utils.vectordatabase import retriever
-from app.schemas.pydanticschema import LearningRoadmap
+from app.schemas.pydanticschema import LearningRoadmap,SearchCourse
 import json
 from typing import Dict, List,Any
 from pathlib import Path
@@ -68,7 +68,7 @@ def submit_final_roadmap(candidate_name, target_role, roadmap, onboarding_summar
     return result
 
 
-@tool
+@tool(args_schema=SearchCourse)
 def submit_mermaid_visualization(mermaid_code: str):
     """
     STRICTLY call this tool to save the Mermaid.js visualization of the roadmap.
